@@ -1,25 +1,45 @@
-.app{
-    min-width: 320px;
+* {
+    padding: 0;
+    margin: 0;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 0 20px;
-    .h1{
-        color: #FFF;
-    }
+
+body {
+    overflow-x: hidden;
 }
-.main{
-    padding: 10px;
-    max-width: 500px;
-    margin: auto;
-    .h2{
-        padding: 5px;
-        margin: 0;
+
+.wrapper {
+    width:100%;
+
+    .top-banner {
+        background-image: linear-gradient(rgba(255,255,255,0.4),rgba(230,230,230,0.4)), url('../images/world-map.png');
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 2/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .img{
-        width: 100%;
+
+    .part1 {
+        background-image: linear-gradient(rgba(255,255,255,0.4),rgba(230,230,230,0.4)), url('../images/section-img01.jpg');
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 3/1;
+        .about-our-company {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text {
+                h2 {
+                    color:white;
+                }
+                h5 {
+                    color:white;
+                }
+                p {
+                    color: white;
+                }
+            }
+        }
     }
 }
