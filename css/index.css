@@ -30,6 +30,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.wrapper .part1 .about-our-company .text {
+  margin-top: 8vh;
+}
 .wrapper .part1 .about-our-company .text h2 {
   color: white;
 }
