@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <title>Vue I18n v9 Starter Template</title>
@@ -17,7 +22,7 @@
       
        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><img src="images/invade-logo.svg" alt="INVADE" height="50"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -47,31 +52,94 @@
       
       <div class="container-fluid mx-0 p-0">
         <section class="top-banner">
-          <h1>INVADE</h1>
+          <div class="logo">
+            <h1><img src="images/invade-logo.svg" class="img-fluid" alt="INVADE インベード株式会社"></h1>
+          </div>
         </section>
         <section class="part1">
+          <div class="sect">
+            <span>01</span>
+            <p>／</p>
+          </div>
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="about-our-company">
                   <div class="text">
-                    <h2>{{ $t("about.title") }}</h2>
-                <h5>{{ $t("about.concept") }}</h5>
-                <p>{{ $t("about.conceptBody") }}</p>
+                    <h6>What is INVADE Co., Ltd?</h6>
+                    <h3><span>ABOUT</span></h3>
+                    <!-- <h2>{{ $t("about.title") }}</h2> -->
+                    <h5>{{ $t("about.concept") }}</h5>
+                    <p>{{ $t("about.conceptBody") }}</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="col-lg-6 col-md-6 col-sm-12 px-0">
+                <div class="info py-5 px-0">
+                  <dl>
+                    <dt>会社名</dt>
+                    <dd>インベード株式会社</dd>
+                  </dl>
+                  <dl>
+                    <dt>事業内容</dt>
+                    <dd>インターネット、携帯電話網、その他通信システムを利用したデジタルコンテンツの企画、デザイン、制作、運営及び販売業務
+                    ウェブコンテンツに関する企画、デザイン、制作、運営業務
+                    情報システムの研究および開発
+                    各種イベントの企画、制作等
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>開発実績：</dt>
+                    <dd>
+                      <div class="inner">
+                        <dl>
+                          <dt>2021年6月</dt>
+                          <dd>KAMISMA BEAUTY<br>（カミカリスマ美容師予約サービス）</dd>
+                        </dl>
+                        <dl>
+                          <dt>2021年7月</dt>
+                          <dd>NILE<br>（全世界対応B2Bマッチングプラットフォーム）</dd>
+                        </dl>
+                      </div>
+                    </dd>
+                  </dl>   
+                  <dl>
+                    <dt>資本金</dt>
+                    <dd>300万円</dd>
+                  </dl>
+                </div>
                 <!-- <img src="images/world-map.png" alt="" class="img-fluid"> -->
               </div>
             </div>
           </div>
         </section>
         <section class="part2">
-          <p>{{ $t("message.projects") }}</p>
+          <!-- <p>{{ $t("message.projects") }}</p> -->
+          <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4">
+                <img src="images/001-kamisma-beauty-logo.png" alt="KAMISMA Beauty" class="img-fluid">
+                <h4>{{ $t("kmb.title") }}</h4>
+                <h5>{{ $t("kmb.type") }}</h5>
+                <p style="white-space:pre-wrap;">{{ $t("kmb.body") }}</p>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="images/002-nile-logo.png" alt="KAMISMA Beauty" class="img-fluid">
+                <h4>{{ $t("nileBeauty.title") }}</h4>
+                <h5>{{ $t("nileBeauty.type") }}</h5>
+                <p style="white-space:pre-wrap;">{{ $t("nileBeauty.body") }}</p>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="images/003-kamismax.png" :alt="$t('kmx.title')" class="img-fluid">
+                <h4>{{ $t("kmx.title") }}</h4>
+                <h5>{{ $t("kmx.type") }}</h5>
+                <p style="white-space:pre-wrap;">{{ $t("kmx.body") }}</p>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-6">
           <p>{{ $t("kmx.title") }}</p>
           <p style="white-space:pre-wrap;">{{ $t("kmx.body") }}</p>
@@ -79,7 +147,7 @@
         <div class="col-lg-6">
 
         </div>
-      </div>
+      </div> -->
     </div>
     <script>
       const { createApp } = Vue;
@@ -92,7 +160,7 @@
             about: {
               title: 'About Us',
               concept: 'CONCEPT',
-              conceptBody: 'Creating a New Business Model,' + '\n' + 'Making Japanese Beauty Industry a GLOBAL STANDARD',
+              conceptBody: 'We aim to create a new business model,' + '\n' + 'Making Japanese Beauty Industry a GLOBAL STANDARD.' + '\n' + 'We create services in utilizing our experiences in the beauty and salon industry in Japan both as a manufacturer and a dealer, and creating new web services, with information technology and recent trends.',
               messageTitle: 'Message', 
               messageBody: 'Making our full use of the knowledge of the'
             },
@@ -100,9 +168,20 @@
               // language: "Language",
               projects: "Projects"
             },
-            kmx: {
-              title: "What is Kamisma?",
+            kmb: {
+              title: "KAMISMA BEAUTY",
+              type: 'KAMISMA Reservation System',
               body: "KAMISMA BEAUTY is a reservation service between the customers and the salon/stylists that are praised as CHARISMA (charismatic). Just like France has Michelin Guide for food, Japan has KAMI CHARISMA for beauty salon.  In the newer edition, there are stylists that received the accolades, but hard to reserve, in which the reservation service is called KAMISMA BEAUTY. You can experience an exclusive menu as well."
+            },
+            nileBeauty: {
+              title: 'NILE BEAUTY',
+              type: 'B2B Business Matching Service',
+              body: 'B2B Business Matching Service connecting businesses globally.' + '\n' + 'Until recently, the way we would gather information, negotiate, and do business were in-person.   With the reliance on Social Media and the emergence of 5G, the spread of information is changing as well.  NILE matches between companies, company and individuals.  We aim to support long-lasting business relationships because of stumbling onto the products and services because of the use of internet.'
+            },
+            kmx: {
+              title: 'KAMISMAX',
+              type: 'Streaming Educational Video Service',
+              body: 'Making a new wave in the hair salon industry, set to be released in 2021、Will be releasing new videos which will create a new standard into the future.'
             }
           },
           ja: {
@@ -115,9 +194,20 @@
               // language: "言語",
               projects: "実績"
             },
-            kmx: {
-              title: "カミスマとは?",
+            kmb: {
+              title: "カミスマ",
+              type: 'KAMISMA予約システム',
               body: 'KAMISMA BEAUTY(カミスマ ビューティー)はCharismaと評される美容師＆美容室とお客様を繋げる予約サービスです。' + '\n' + 'フランスには「食」のミシュランがありますが、日本には「美容」のKAMI CHARISMA(カミカリスマ)があります。カミカリスマ・ガイドブック最新版には、栄えある星を獲得した予約困難なスター美容師たちが勢ぞろい。そんな彼らの予約が取れる特化型サービスがKAMISMA BEAUTYです。幻の一枠などここでしか味わえない限定メニューを体験して頂けます。'
+            },
+            nileBeauty: {
+              title: 'NILE BEAUTY',
+              type: 'オンライン国際展示会システム',
+              body: '全世界対応のB2Bマッチングサービス（国際オンライン展示会システム）。' + '\n' + 'これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。 NILEは企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。既存のサービスと一線を画す画期的なコンテンツを発信します。絞り込まれた情報を見るのではなく、オンラインだからこそ実現できる良質な「偶然の出会い」を提供し、長く続くビジネスをサポートいたします。'
+            },
+            kmx: {
+              title: 'KAMISMAX',
+              type: 'オンライン教育動画配信サービス',
+              body: 'ヘアサロン業界に一石を投じる、全く新しい仕掛けを2021年内にリリース予定。これからのスタンダードになる新しいカタチの動画コンテンツを発信いたします。 乞うご期待ください。'
             }
           }
         },
