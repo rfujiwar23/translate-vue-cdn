@@ -178,7 +178,37 @@ body {
           }
     }
 }
+@media screen and (min-width:1200px) {
+    .wrapper {
+        .part2 {
+           .services {
+            width:80%;
+            min-width:960px;
+           }
+        }
+    }
+}
 
+@media screen and (max-width:1200px) {
+    .wrapper {
+        .part2 {
+           .services {
+            width:90%;
+            max-width:960px;
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper {
+        .part2 {
+            .services {
+                width:100%;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
     .wrapper {
