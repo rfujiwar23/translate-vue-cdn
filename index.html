@@ -315,16 +315,25 @@
               <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="our-projects">
                   <div class="text">
-                    <h6>Our Services</h6>
-                    <h3><span>PROJECTS</span></h3>
+                    <h6>Corporate</h6>
+                    <h3><span>PROFILE</span></h3>
                     <!-- <h2>{{ $t("about.title") }}</h2> -->
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 px-0">
-                <!-- Button trigger modal -->
+              <div class="corporate-profile col-lg-6 col-md-6 col-sm-12 px-0">
+                <div class="info">
+                  <h3><span>{{ $t("corporate.comp") }}</span></h3>
+                  <p>{{ $t("corporate.name") }}</p>
 
-                <!-- <img src="images/world-map.png" alt="" class="img-fluid"> -->
+                  <h3>{{ $t("corporate.det") }}</h3>
+                  <p style="white-space:pre-wrap;">{{ $t("corporate.details") }}</p>
+
+                  <h3>開発実績：</h3>
+
+                  <h3>{{ $t("corporate.cap") }}</h3>
+                  <p>{{ $t("corporate.capital") }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -380,7 +389,15 @@
               body: 'Making a new wave in the hair salon industry, set to be released in 2021、Will be releasing new videos which will create a new standard into the future.',
               link: "Go To the Site",
               details: "Read More",
-            }
+            },
+            corporate: {
+              comp: 'Company Name',
+              name: 'INVADE Co., Ltd.',
+              det: 'Business',
+              details: 'Planning, designing, production, operation and sales of of digital contents utilizing the internet, mobile device, and other telecommunication tools.' + '\n' + 'Also in planning, designing, production, operation of web contents and creating new informational systems.' + '\n' + 'Planning and production of events.',
+              cap: 'Capital',
+              capital: '~27,000 yen',
+            },
           },
           ja: {
             about: {
@@ -412,6 +429,14 @@
               body: 'ヘアサロン業界に一石を投じる、全く新しい仕掛けを2021年内にリリース予定。これからのスタンダードになる新しいカタチの動画コンテンツを発信いたします。 乞うご期待ください。',
               link: "ページへ",
               details: "詳細へ",
+            },
+            corporate: {
+              comp: '会社名',
+              name: 'インベード株式会社',
+              det: '事業内容',
+              details: 'インターネット、携帯電話網、その他通信システムを利用したデジタルコンテンツの企画、デザイン、制作、運営及び販売業務' + '\n' + 'ウェブコンテンツに関する企画、デザイン、制作、運営業務 情報システムの研究および開発 各種イベントの企画、制作等',
+              cap: '資本金',
+              capital: '300万円',
             }
           }
         },

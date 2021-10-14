@@ -158,6 +158,54 @@ body {
   color: white;
   background: #2b5329;
 }
+.wrapper .part3 {
+  background: url("../images/world-map.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper .part3 .our-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part3 .our-projects .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part3 .our-projects .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part3 .our-projects .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part3 .our-projects .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part3 .our-projects .text p {
+  white-space: pre-wrap;
+}
+.wrapper .part3 .corporate-profile {
+  padding: 4vh 3vw;
+}
+.wrapper .part3 .corporate-profile .info {
+  width: 90%;
+  margin: 3vh auto;
+  background: rgba(30, 30, 30, 0.1);
+  padding: 30px 20px;
+  box-shadow: 1px 3px 6px rgba(68, 68, 75, 0.397);
+}
+.wrapper .part3 .corporate-profile .info h3 {
+  font-size: 1.5em;
+  border-left: 8px solid #9de7d7;
+  padding-left: 5px;
+  border-bottom: 1px solid rgba(68, 68, 75, 0.397);
+}
+.wrapper .part3 .corporate-profile .info p {
+  padding: 0 10px;
+}
 
 .modal {
   color: #3a3b3c;
