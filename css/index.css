@@ -158,6 +158,18 @@ body {
   color: white;
   background: #2b5329;
 }
+.wrapper .part2 .services .item .link a.btn-details {
+  color: #2b5329;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #2b5329;
+  background: #ffffff;
+  padding: 5px 20px;
+}
+.wrapper .part2 .services .item .link a.btn-details:hover {
+  color: white;
+  background: #2b5329;
+}
 .wrapper .part3 {
   background: url("../images/world-map.png") no-repeat;
   background-size: cover;
@@ -206,9 +218,55 @@ body {
 .wrapper .part3 .corporate-profile .info p {
   padding: 0 10px;
 }
+.wrapper .part4 {
+  background: rosybrown;
+  padding: 5vh 0;
+}
+.wrapper .part4 #list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper .part4 #list > .textContents {
+  background: white;
+  padding: 10px 20px;
+}
+.wrapper .part4 #list > .textContents h2 {
+  text-align: center;
+}
+.wrapper .part4 #list > .textContents h5 span {
+  padding: 3px 5px;
+  font-size: 0.8em;
+}
+.wrapper .part4 #list > .textContents h5 span:before {
+  content: "#";
+  padding-right: 5px;
+}
+.wrapper .part4 #list > .textContents .development {
+  color: blue;
+}
+.wrapper .part4 #list > .textContents .development span {
+  border: 1px solid blue;
+}
 
 .modal {
   color: #3a3b3c;
+}
+.modal .modal-body p {
+  padding: 10px 20px;
+  line-height: 2em;
+}
+.modal .go-to-link-modal {
+  color: #2b5329;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #2b5329;
+  background: #ffffff;
+  padding: 5px 20px;
+}
+.modal .go-to-link-modal:hover {
+  color: white;
+  background: #2b5329;
 }
 
 @media screen and (min-width: 1200px) {

@@ -156,9 +156,9 @@
                   <div class="link">
                     <a class="to-link-btn" href="https://www.kamisma.com/">{{ $t("kmb.link") }}</a>
                     
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kamismaModal">
+                    <a class="btn-details" data-bs-toggle="modal" data-bs-target="#kmxModal">
                       {{ $t("kmb.details") }}
-                    </button>
+                    </a>
                   </div>
               </div>
               <div class="item">
@@ -176,9 +176,10 @@
                   </div>
                   <div class="link">
                     <a class="to-link-btn" href="https://www.nile.inc/">{{ $t("nileBeauty.link") }}</a>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nileModal">
+                  
+                    <a class="btn-details" data-bs-toggle="modal" data-bs-target="#kmxModal">
                       {{ $t("nileBeauty.details") }}
-                    </button>
+                    </a>
                     <!-- open modal -->
                     
                   </div>                 
@@ -199,9 +200,10 @@
                   </div>
                   <div class="link">
                     <a class="to-link-btn" href="#">{{ $t("kmx.link") }}</a>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kmxModal">
+                    
+                    <a class="btn-details" data-bs-toggle="modal" data-bs-target="#kmxModal">
                       {{ $t("kmx.details") }}
-                    </button>
+                    </a>
                   </div>
               </div>
 
@@ -227,11 +229,12 @@
                       </div>
                       <h5>{{ $t("kmb.type")}}</h5>
                       <p style="white-space:pre-wrap;">{{ $t("kmb.body") }}</p>
-                      <a href="https://beauty.nile.inc/" target="_blank">{{$t("kmb.link")}}</a>
+                      
                     </div>
                     <div class="modal-footer">
-                      
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <a class="go-to-link-modal" href="https://beauty.nile.inc/" target="_blank">{{$t("kmb.link")}}</a>
+                      
                     </div>
                   </div>
                 </div>
@@ -336,6 +339,22 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section class="part4">
+          <div class="sect">
+            <span>04</span>
+            <p>／</p>
+          </div>
+          <div class="our-projects">
+            <div class="text">
+              <h6>NEWS</h6>
+              <h3><span>お知らせ</span></h3>
+              <!-- <h2>{{ $t("about.title") }}</h2> -->
+            </div>
+          </div>
+          <div id="list" class="row">
+
           </div>
         </section>
         
@@ -445,6 +464,75 @@
       const app = createApp({});
       app.use(i18n);
       app.mount("#app");
+    </script>
+
+    <script>
+
+      let response = [];
+
+      fetch("https://jnews.microcms.io/api/v1/news/?limit=50", {
+              headers: {
+                  "X-API-KEY": "2788fca6-1836-4e83-ae3c-c582735707d7"
+              }
+          })
+          .then(function(res) {
+              return res.json();
+          })
+          .then(function(json) {
+            console.log(json);
+              var fragment = document.createDocumentFragment();
+              
+              for (var i = 0; i < json.contents.length; i++) {
+
+                
+                  // console.log(json.contents);
+                  response = json.contents;
+                
+                  console.log(response[i].body);
+                  console.log(response[i].title);
+                  // console.log(response[i].type.category);
+                  console.log(response[i].createdAt.substring(0,10));
+                 
+            
+                  var title = document.createElement('h2');
+                  title.innerHTML = json.contents[i].title;
+
+                  // var type = document.createElement('h5');
+                  // type.className = json.contents[i].type[i].id;
+                  // type.innerHTML = "<span>" + json.contents[i].type[i].category + "</span>";
+
+                  var postDate = document.createElement('p');
+                  postDate.innerHTML = json.contents[i].createdAt.substring(0,10);
+
+
+                  var body = document.createElement('div');
+                  body.className = "post-contents";
+                  body.innerHTML = json.contents[i].body;
+                  
+
+                  var textContents = document.createElement('div');
+                  textContents.className = "textContents col-md-4 col-sm-6";
+                  textContents.appendChild(title);
+                  // textContents.appendChild(type);
+                  textContents.appendChild(postDate);
+                  textContents.appendChild(body);
+
+                  
+                  console.log(textContents);
+
+                 
+                  
+
+                  fragment.appendChild(textContents);
+                  // console.log(fragment);
+                  
+
+                
+
+              }
+              document.getElementById('list').appendChild(fragment);
+              
+          })
     </script>
   </body>
 </html>

@@ -172,7 +172,21 @@ body {
                             background:#2b5329;
                         }
                     }
+                    a.btn-details {
+                        color:#2b5329;
+                        text-decoration: none;
+                        color:black;
+                        border:1px solid #2b5329;
+                        background:#ffffff;
+                        padding:5px 20px;
+                        &:hover {
+                            color:white;
+                            background:#2b5329;
+                        }
+                    }
                 }
+
+
 
               }
           }
@@ -232,10 +246,63 @@ body {
             }
         }
     }
+
+    .part4 {
+        background:rosybrown;
+        padding:5vh 0;
+        #list {
+            width:100%;
+            max-width:1200px;
+            margin: 0 auto;
+            >.textContents {
+                background: white;
+                padding: 10px 20px;
+                h2 {
+                    text-align: center;
+                }
+                h5 {
+                  span {
+                    
+                    padding:3px 5px;
+                    font-size:0.8em;
+                    &:before {
+                        content: '#';
+                        padding-right: 5px;
+                    }
+                  } 
+                }
+                .development {
+                    color: blue;
+                    span {
+                        border: 1px solid blue;
+                    }
+                }
+            }
+            
+        }
+    }
 }
 
 .modal {
     color:#3a3b3c;
+    .modal-body {
+        p {
+            padding:10px 20px;
+            line-height: 2em;
+        }
+    }
+    .go-to-link-modal {
+        color:#2b5329;
+        text-decoration: none;
+        color:black;
+        border:1px solid #2b5329;
+        background:#ffffff;
+        padding:5px 20px;
+        &:hover {
+            color:white;
+            background:#2b5329;
+        }
+    }
 }
 @media screen and (min-width:1200px) {
     .wrapper {
