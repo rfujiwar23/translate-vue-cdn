@@ -156,7 +156,7 @@
                   <div class="link">
                     <a class="to-link-btn" href="https://www.kamisma.com/">{{ $t("kmb.link") }}</a>
                     
-                    <a class="btn-details" data-bs-toggle="modal" data-bs-target="#kmxModal">
+                    <a class="btn-details" data-bs-toggle="modal" data-bs-target="#kamismaModal">
                       {{ $t("kmb.details") }}
                     </a>
                   </div>
@@ -177,7 +177,7 @@
                   <div class="link">
                     <a class="to-link-btn" href="https://www.nile.inc/">{{ $t("nileBeauty.link") }}</a>
                   
-                    <a class="btn-details" data-bs-toggle="modal" data-bs-target="#kmxModal">
+                    <a class="btn-details" data-bs-toggle="modal" data-bs-target="#nileModal">
                       {{ $t("nileBeauty.details") }}
                     </a>
                     <!-- open modal -->
@@ -232,8 +232,8 @@
                       
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <a class="go-to-link-modal" href="https://beauty.nile.inc/" target="_blank">{{$t("kmb.link")}}</a>
+                      <a class="close-modal" data-bs-dismiss="modal">Close</a>
+                      <a class="go-to-link-modal" href="https://www.kamisma.com/" target="_blank">{{$t("kmb.link")}}</a>
                       
                     </div>
                   </div>
@@ -262,11 +262,12 @@
                       </div>
                       <h5>{{ $t("nileBeauty.type")}}</h5>
                       <p style="white-space:pre-wrap;">{{ $t("nileBeauty.body") }}</p>
-                      <a href="https://beauty.nile.inc/" target="_blank">{{$t("nileBeauty.link")}}</a>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/jVtl2kRIXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="modal-footer">
+                      <a  class="close-modal" data-bs-dismiss="modal">Close</a>
+                      <a class="go-to-link-modal" href="https://beauty.nile.inc" target="_blank">{{$t("nileBeauty.link")}}</a>
                       
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
@@ -294,11 +295,12 @@
                       </div>
                       <h5>{{ $t("kmx.type")}}</h5>
                       <p style="white-space:pre-wrap;">{{ $t("kmx.body") }}</p>
-                      <a href="https://beauty.nile.inc/" target="_blank">{{$t("kmx.link")}}</a>
+                      <!-- <a href="https://beauty.nile.inc/" target="_blank">{{$t("kmx.link")}}</a> -->
                     </div>
                     <div class="modal-footer">
+                      <a class="close-modal" data-bs-dismiss="modal">Close</a>
+                      <a class="go-to-link-modal" href="#" target="_blank">{{$t("kmx.link")}}</a>
                       
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
@@ -346,14 +348,96 @@
             <span>04</span>
             <p>／</p>
           </div>
-          <div class="our-projects">
-            <div class="text">
-              <h6>NEWS</h6>
-              <h3><span>お知らせ</span></h3>
-              <!-- <h2>{{ $t("about.title") }}</h2> -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="our-projects">
+                  <div class="text">
+                    <h6>NEWS</h6>
+                    <h3><span>お知らせ</span></h3>
+                    <!-- <h2>{{ $t("about.title") }}</h2> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+              </div>
             </div>
           </div>
           <div id="list" class="row">
+
+          </div>
+        </section>
+        <section class="part5">
+          <div class="sect">
+            <span>04</span>
+            <p>／</p>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="our-projects">
+                  <div class="text">
+                    <h6>CONTACT US</h6>
+                    <h3><span>お問合せ</span></h3>
+                    <!-- <h2>{{ $t("about.title") }}</h2> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+              </div>
+            </div>
+            <!-- <?php
+              if($message_sent):
+            ?>
+                <h3>Thank you！</h3>
+
+            <?php
+            else:
+            ?>  -->
+          <div class="container">
+            <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+              <div class="contact-form">
+                  <div class="block">
+                  <label>お名前<span>※</span></label>
+                  <input type="text" name="name" placeholder="山田太郎" value="">
+                  </div>
+                  <div class="block">
+                  <label>ふりがな<span>※</span></label>
+                  <input type="text" name="furigana" placeholder="やまだたろう" value="">
+                  </div>
+                  <div class="block">
+                  <label>メールアドレス<span>※</span></label>
+                  <input type="text" name="email" placeholder="info@invade.co.jp" value="">
+                  </div>
+                  <div class="block">
+                  <label>電話番号</label>
+                  <input type="text" name="tel" placeholder="0000000000" value="">
+                  </div>
+                  <div class="block">
+                  <label>内容<span>※</span></label>
+                  <textarea name="content" rows="5" placeholder="お問合せ内容を入力"></textarea>
+                  </div>
+              </div>
+
+              <h6><span>※</span>は必須</h6>
+
+              <div class="info-box col-xl-10 offset-xl-1 col-lg-10 offset-lg-1 col-md-10 offset-md-1 my-4">
+                  <h2><span>お問い合わせに関する注意事項</span></h2>
+                  <ul>
+                  <li>ご記入いただいた個人情報は、お問い合わせへの回答、情報提供のために使用させていただきます。</li>
+                  <li>個人情報を正しくご記入いただけない場合やお問い合わせ内容によっては、回答できない場合がございます。</li>
+                  <li>お問い合わせ内容によっては、回答にお時間をいただく場合がございます。</li>
+                  <li>回答はお客様個人宛に送るものですので、転載・転送等の二次利用は固くお断りいたします。</li>
+                  </ul>
+              </div>
+
+              <div class="text-center">
+                  <button type="submit" class="btn btn-primary">確認画面へ</button>
+              </div>
+
+
+              </form>
+          </div>
 
           </div>
         </section>

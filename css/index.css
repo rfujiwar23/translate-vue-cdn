@@ -159,16 +159,16 @@ body {
   background: #2b5329;
 }
 .wrapper .part2 .services .item .link a.btn-details {
-  color: #2b5329;
+  color: #3F2857;
   text-decoration: none;
   color: black;
-  border: 1px solid #2b5329;
-  background: #ffffff;
+  background: #ffcc00;
   padding: 5px 20px;
+  margin-left: 10px;
 }
 .wrapper .part2 .services .item .link a.btn-details:hover {
   color: white;
-  background: #2b5329;
+  background: #ffcc00;
 }
 .wrapper .part3 {
   background: url("../images/world-map.png") no-repeat;
@@ -220,16 +220,40 @@ body {
 }
 .wrapper .part4 {
   background: rosybrown;
-  padding: 5vh 0;
+  padding-bottom: 8vh;
+}
+.wrapper .part4 .our-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part4 .our-projects .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part4 .our-projects .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part4 .our-projects .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part4 .our-projects .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part4 .our-projects .text p {
+  white-space: pre-wrap;
 }
 .wrapper .part4 #list {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 4vh auto;
 }
 .wrapper .part4 #list > .textContents {
   background: white;
-  padding: 10px 20px;
+  padding: 20px;
 }
 .wrapper .part4 #list > .textContents h2 {
   text-align: center;
@@ -247,6 +271,30 @@ body {
 }
 .wrapper .part4 #list > .textContents .development span {
   border: 1px solid blue;
+}
+.wrapper .part5 .our-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part5 .our-projects .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part5 .our-projects .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part5 .our-projects .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part5 .our-projects .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part5 .our-projects .text p {
+  white-space: pre-wrap;
 }
 
 .modal {
@@ -267,6 +315,19 @@ body {
 .modal .go-to-link-modal:hover {
   color: white;
   background: #2b5329;
+}
+.modal .close-modal {
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  background: gray;
+  padding: 5px 20px;
+}
+.modal .close-modal:hover {
+  border: solid 1px black;
+  background: white;
+  color: black;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
