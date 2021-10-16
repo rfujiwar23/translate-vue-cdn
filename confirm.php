@@ -173,37 +173,34 @@ EOM;
 
           <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 col-sm-12 contact-us">
             <form action="confirm.php" method="post">
-            <input type="hidden" name="name" value="<?php echo $name; ?>">
-            <input type="hidden" name="furigana" value="<?php echo $furigana; ?>">
-            <input type="hidden" name="email" value="<?php echo $email; ?>">
-
-            <input type="hidden" name="content" value="<?php echo $content; ?>">
-            <h5 class="contact-title">お問い合わせ 内容確認</h5>
-            <p>お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ「送信する」ボタンを押して下さい。</p>
-            <div>
-                <div>
-                    <label>お名前</label>
-                    <p><?php echo $name; ?></p>
-                </div>
-                <div>
-                    <label>ふりがな</label>
-                    <p><?php echo $furigana; ?></p>
-                </div>
-                <div>
-                    <label>メールアドレス</label>
-                    <p><?php echo $email; ?></p>
-                </div>
-                <div>
-                    <label>電話番号</label>
-                    <p><?php echo $tel; ?></p>
-                </div>
-                <div>
-                    <label>お問い合わせ内容</label>
-                    <p><?php echo nl2br($content); ?></p>
-                </div>
-            </div>
-              <!-- <input type="button" value="内容を修正する" onclick="history.back(-1)"> -->
-              <!-- <button type="submit" name="submit">送信する</button> -->
+              <input type="hidden" name="name" value="<?php echo $name; ?>">
+              <input type="hidden" name="furigana" value="<?php echo $furigana; ?>">
+              <input type="hidden" name="email" value="<?php echo $email; ?>">
+              <input type="hidden" name="content" value="<?php echo $content; ?>">
+              <h5 class="contact-title">お問い合わせ 内容確認</h5>
+              <p>お問い合わせ内容はこちらで宜しいでしょうか？<br>よろしければ「送信する」ボタンを押して下さい。</p>
+              <div>
+                  <div>
+                      <label>お名前</label>
+                      <p><?php echo $name; ?></p>
+                  </div>
+                  <div>
+                      <label>ふりがな</label>
+                      <p><?php echo $furigana; ?></p>
+                  </div>
+                  <div>
+                      <label>メールアドレス</label>
+                      <p><?php echo $email; ?></p>
+                  </div>
+                  <div>
+                      <label>電話番号</label>
+                      <p><?php echo $tel; ?></p>
+                  </div>
+                  <div>
+                      <label>お問い合わせ内容</label>
+                      <p><?php echo nl2br($content); ?></p>
+                  </div>
+              </div>
               <button type="button" class="btn btn-secondary" onclick="history.back(-1)">修正する</button>
               <button type="submit" class="btn btn-primary" name="submit">送信する</button>
             </form>
