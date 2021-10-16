@@ -492,6 +492,22 @@ body {
   .wrapper .part2 .services .item {
     margin: 20px 1%;
   }
+
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 85%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

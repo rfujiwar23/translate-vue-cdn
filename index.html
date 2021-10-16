@@ -30,26 +30,37 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <label>Lang.</label>
+          <!-- <label>Lang.</label>
             <select v-model="$i18n.locale">
               <option value="en">English</option>
               <option value="ja">日本語</option>
-            </select>
+            </select> -->
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">TOP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#news">NEWS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#about">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#projects">PROJECTS</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">PROFILE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+              
             </ul>
+            <select v-model="$i18n.locale">
+              <option value="ja">日本語</option>
+              <option value="en">English</option>
+            </select>
           </div>
         </div>
       </nav> 
@@ -63,7 +74,7 @@
             <h1 class="text-company"></h1>
           </div>
         </section>
-        <section class="part4">
+        <section class="part4" id="news">
           <div class="sect">
             <span>01</span>
             <p>／</p>
@@ -94,7 +105,7 @@
           
           
         </section>
-        <section class="part1">
+        <section class="part1" id="about">
           <div class="sect">
             <span>02</span>
             <p>／</p>
@@ -153,7 +164,7 @@
             </div>
           </div>
         </section>
-        <section class="part2">
+        <section class="part2" id="projects">
           <div class="sect">
             <span>03</span>
             <p>／</p>
@@ -251,14 +262,14 @@
                     </div>
                     <div class="modal-body">
                       <div class="row">
-                        <div class="modal-images col-lg-4 col-8">
-                          <img src="images/001-kamisma-beauty-logo.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
+                        <div class="modal-images col-lg-4 col-md-4">
+                          <img src="images/kamisma-001.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
                         </div>
-                        <div class="modal-images col-lg-4 col-8">
-                          <img src="images/001-kamisma-beauty-logo.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
+                        <div class="modal-images col-lg-4 col-md-4">
+                          <img src="images/kamisma-002.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
                         </div>
-                        <div class="modal-images col-lg-4 col-8">
-                          <img src="images/001-kamisma-beauty-logo.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
+                        <div class="modal-images col-lg-4 col-md-4">
+                          <img src="images/kamisma-003.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
                         </div>
                       </div>
                       <h5>{{ $t("kmb.type")}}</h5>
@@ -284,13 +295,13 @@
                     </div>
                     <div class="modal-body">
                       <div class="row my-5">
-                        <div class="modal-images col-lg-4 col-8">
+                        <div class="modal-images col-lg-4 col-md-4">
                           <img src="images/nile-001.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
                         </div>
-                        <div class="modal-images col-lg-4 col-8">
+                        <div class="modal-images col-lg-4 col-md-4">
                           <img src="images/nile-002.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
                         </div>
-                        <div class="modal-images col-lg-4 col-8">
+                        <div class="modal-images col-lg-4 col-md-4">
                           <img src="images/nile-003.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
                         </div>
                       </div>
@@ -348,7 +359,7 @@
             </div>
           </div>
         </section>
-        <section class="part3">
+        <section class="part3" id="profile">
           <div class="sect">
             <span>04</span>
             <p>／</p>
@@ -382,7 +393,7 @@
           </div>
         </section>
         
-        <section class="part5">
+        <section class="part5" id="contact">
           <div class="sect">
             <span>05</span>
             <p>／</p>

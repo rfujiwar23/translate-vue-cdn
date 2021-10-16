@@ -589,6 +589,8 @@ body {
     }
 }
 
+
+
 @media screen and (max-width: 768px) {
     .wrapper {
         .part2 {
@@ -597,6 +599,31 @@ body {
                 .item {
                     margin:20px 1%;
                 }
+            }
+        }
+    }
+    .modal {
+        .modal-body {
+            .modal-images {
+                margin:1vh auto;
+                width:90%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+   .modal-dialog {
+        max-width: 90% !important;
+   }
+}
+
+@media screen and (max-width: 576px) {
+    .modal {
+        .modal-body {
+            .modal-images {
+                margin:1vh auto;
+                width:85%;
             }
         }
     }
