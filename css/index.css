@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -223,15 +224,23 @@ body {
 }
 .wrapper .part3 .corporate-profile .info h3 {
   font-size: 1.5em;
-  border-left: 8px solid #9de7d7;
+  border-left: 8px solid #2A908D;
   padding-left: 5px;
   border-bottom: 1px solid rgba(68, 68, 75, 0.397);
 }
 .wrapper .part3 .corporate-profile .info p {
   padding: 0 10px;
 }
+.wrapper .part3 .corporate-profile .info dl dt {
+  font-weight: normal;
+}
+.wrapper .part3 .corporate-profile .info dl dt span {
+  margin-left: 10px;
+  font-size: 1.15em;
+}
 .wrapper .part4 {
   padding-bottom: 8vh;
+  background: #faf9f6;
 }
 .wrapper .part4 .our-projects {
   display: flex;
@@ -299,6 +308,18 @@ body {
   cursor: pointer;
   background: white;
   border-bottom: 1px dotted #666;
+}
+.wrapper .part4 .ac-container .each label em {
+  font-size: 0.8em;
+  font-style: normal;
+  margin-right: 10px;
+  color: #656565;
+}
+.wrapper .part4 .ac-container .each label em:before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  margin-right: 5px;
+  font-size: 0.8em;
 }
 .wrapper .part4 .ac-container .each label span.new {
   color: white;
@@ -492,6 +513,12 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .wrapper .top-banner {
+    aspect-ratio: 1;
+  }
+  .wrapper .top-banner .logo {
+    width: 60%;
+  }
   .wrapper .part2 .services {
     flex-direction: column;
   }
@@ -513,6 +540,35 @@ body {
   .modal .modal-body .modal-images {
     margin: 1vh auto;
     width: 85%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 85%;
+  }
+
+  .wrapper .top-banner {
+    aspect-ratio: 1;
+  }
+  .wrapper .top-banner .logo {
+    width: 60%;
+  }
+  .wrapper .part4 .ac-container .each label {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 85%;
+  }
+
+  .wrapper .part4 .ac-container .each label {
+    font-size: 12px;
+  }
+  .wrapper .part4 .ac-container .each article p {
+    font-size: 12px;
   }
 }
 
