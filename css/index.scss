@@ -7,19 +7,24 @@ body {
     overflow-x: hidden;
 }
 
-
+.navbar-light .navbar-toggler {
+    color: none;
+    border-color: none;
+}
 
 
 
 .wrapper {
     width:100%;
 
+    // common part
     .navbar {
         background:#9DE7D7;
     }
+    // common part
 
     .top-banner {
-        background-image: linear-gradient(rgba(255,255,255,0.4),rgba(230,230,230,0.4)), url('../images/world-bg.jpg');
+        background-image: linear-gradient(rgba(255,255,255,0.4),rgba(230,230,230,0.4)), url('../images/wordmap.jpg');
         background-size: cover;
         background-position: center;
         aspect-ratio: 2/1;
@@ -205,6 +210,7 @@ body {
                         &:hover {
                             color:white;
                             background:#ffcc00;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -364,8 +370,8 @@ body {
                         color:rgba(101,101,101);
                     }
                     em:before {
-                        font-family: 'Font Awesome 5 Free';
-                        content: '\f017';
+                        // font-family: 'Font Awesome 5 Free';
+                        // content: '\f4fd';
                         margin-right:5px;
                         font-size:0.8em;
                         // font-family: 'font awesome free';
@@ -534,6 +540,68 @@ body {
     }
 }
 
+.wrapper2 {
+    .navbar {
+        background:#9DE7D7;
+    }
+    .title-banner {
+        background-color:#f2bf53;
+        aspect-ratio: 3/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo-area {
+            .logo-img {
+                width:60%;
+                margin:0 auto;
+            }
+        }
+    }
+    section {
+        padding: 2vh 0;
+        font-family: 'Shippori Mincho', serif;
+    }
+    .section01 {
+        // background: #263f49;
+        
+        p {
+            text-align: center;
+            line-height: 2em;
+            font-size: 1.25em;
+        }
+
+        .emphasis {
+            margin-top:5vh;
+            h3 {
+                text-align: center;
+                color:#fff;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+                span {
+                    background:#d3d3d3;
+                    padding:5px 20px;
+                }
+            }
+        }
+    }
+    .section02 {
+        .emphasis {
+            margin-top:5vh;
+            h3 {
+                text-align: center;
+            }
+        }
+        .text {
+            margin:4vh auto;
+            text-align: center;
+            p {
+                font-size:1.25em;
+                line-height: 2em;
+            }
+        }
+    }
+
+}
+
 .modal {
     color:#3a3b3c;
     .modal-body {
@@ -638,6 +706,10 @@ body {
                 }
             }
         }
+        .part4 {
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
     }
     .modal {
         .modal-body {
@@ -679,7 +751,8 @@ body {
 
     .wrapper {
         .top-banner {
-            aspect-ratio: 1;
+           height: 100vh;
+           width: 100%;
             .logo {
                 width:60%;
             }
@@ -689,6 +762,9 @@ body {
                 .each {
                     label {
                         font-size:14px;
+                        span.older {
+                            padding:0 5px;
+                        }
                     }
                 }
             }
