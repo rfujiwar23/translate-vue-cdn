@@ -466,20 +466,23 @@ body {
   padding: 2vh 0;
   font-family: "Shippori Mincho", serif;
 }
+.wrapper2 .section01 {
+  padding: 5vh 0;
+}
 .wrapper2 .section01 p {
   text-align: center;
   line-height: 2em;
   font-size: 1.25em;
 }
-.wrapper2 .section01 .emphasis {
+.wrapper2 .section01 .emphasis-gray {
   margin-top: 5vh;
 }
-.wrapper2 .section01 .emphasis h3 {
+.wrapper2 .section01 .emphasis-gray h3 {
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-.wrapper2 .section01 .emphasis h3 span {
+.wrapper2 .section01 .emphasis-gray h3 span {
   background: #d3d3d3;
   padding: 5px 20px;
 }
@@ -489,11 +492,28 @@ body {
 .wrapper2 .section02 .emphasis h3 {
   text-align: center;
 }
+.wrapper2 .section02 .emphasis-gray {
+  margin-top: 5vh;
+}
+.wrapper2 .section02 .emphasis-gray h3 {
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.wrapper2 .section02 .emphasis-gray h3 span {
+  background: #d3d3d3;
+  padding: 5px 20px;
+}
 .wrapper2 .section02 .text {
   margin: 4vh auto;
   text-align: center;
 }
 .wrapper2 .section02 .text p {
+  font-size: 1.25em;
+  line-height: 2em;
+}
+.wrapper2 .section03 p {
+  text-align: center;
   font-size: 1.25em;
   line-height: 2em;
 }

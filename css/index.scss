@@ -563,14 +563,14 @@ body {
     }
     .section01 {
         // background: #263f49;
-        
+        padding:5vh 0;
         p {
             text-align: center;
             line-height: 2em;
             font-size: 1.25em;
         }
 
-        .emphasis {
+        .emphasis-gray {
             margin-top:5vh;
             h3 {
                 text-align: center;
@@ -590,6 +590,18 @@ body {
                 text-align: center;
             }
         }
+        .emphasis-gray {
+            margin-top:5vh;
+            h3 {
+                text-align: center;
+                color:#fff;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+                span {
+                    background:#d3d3d3;
+                    padding:5px 20px;
+                }
+            }
+        }
         .text {
             margin:4vh auto;
             text-align: center;
@@ -597,6 +609,13 @@ body {
                 font-size:1.25em;
                 line-height: 2em;
             }
+        }
+    }
+    .section03 {
+        p {
+            text-align: center;
+            font-size: 1.25em;
+            line-height: 2em;
         }
     }
 
