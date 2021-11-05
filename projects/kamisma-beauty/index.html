@@ -25,9 +25,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     
     <title>インベード株式会社 || INVADE Co., Ltd.</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue-i18n@next"></script>
 </head>
+
 <body>
-    <div class="wrapper2" id="app-2">
+    <div class="wrapper2" id="kamismaBeautyApp">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="../../images/invade-logo-2.svg" alt="INVADE" height="15"></a>
@@ -78,64 +81,72 @@
         <div class="container-fluid px-0">
             <section class="section01">
                 <p>
-                    KAMISMA BEAUTY（カミスマビューティー）は<br>
-                    「美容師のステータス」・「予約枠の価値」を高めるために誕生した<br>
-                    美容における最高峰の予約サイト
+                    <em>KAMISMA BEAUTY<br class="br_on_430">（カミスマビューティー）</em> は<br>
+                    <strong>「美容師のステータス」</strong>・<strong><br class="br_on_430">「予約枠の価値」</strong>を<br class="br_on_768">高めるために誕生した<br>
+                    美容における<strong>最高峰の予約サイト</strong>
                 </p>
                 <p>
-                    掲載される美容師は、美容版ミシュラン・カミカリスマに選出された日本を代表する美容師たち<br>
+                    掲載される美容師は、<br class="br_on_992">美容版ミシュラン・<strong>カミカリスマ</strong>に選出された<br class="br_on_768">日本を代表する美容師たち<br>
                     一流の技術に見合った価格以上の満足感を提供し<br>
-                    日本の美容価値を世界基準に引き上げ、新しい予約のカタチで価値の向上に繋げます
+                    日本の美容価値を世界基準に引き上げ、<br class="br_on_768">新しい予約のカタチで価値の向上に繋げます
                 </p>
 
                 <div class="emphasis-gray">
-                    <h3><span>KAMISMA BEAUTYだからこそ受けられる限定メニュー</span></h3>
+                    <h3><span>KAMISMA BEAUTYだからこそ<br class="br_on_700">受けられる限定メニュー</span></h3>
                 </div>
 
 
             </section>
+            <hr>
             <section class="section02">
                 <div class="emphasis">
-                    <h3>幻の一枠</h3>
+                    <h3><span>幻の一枠</span></h3>
+                    <!-- <h1>幻の一枠</h1> -->
                 </div>
-                <div class="text">
+                <div class="text-top">
                     <p>
                     一ヶ月に、一枠のみ<br>
-                    一名のお客様だけが体験できる最上級のメニュー<br>
-                    カミスマビューティー限定のメニューとして、一流の技術はもちろん<br>
+                    一名のお客様だけが体験できる<br class="br_on_430">最上級のメニュー<br>
+                    カミスマビューティー限定のメニューとして、<br class="br_on_576">一流の技術はもちろん<br>
                     最高のひと時・満足感・特別感をご提供します
                     </p>
                 </div>
+                <hr>
                 <div class="emphasis">
-                    <h3>星の三枠</h3>
+                    <h3><span class="grey-gradient">星の三枠</span></h3>
                 </div>
-                <div class="text">
+                <div class="text-top">
                     <p>
                         一ヶ月に、三枠のみ<br>
                         三名のお客様だけが体験できるメニュー<br>
-                        幻の一枠よりも身近に、それでいれ最高級の一流技術を体験いただけます
+                        幻の一枠よりも身近に、<br class="br_on_576">それでいれ最高級の一流技術を<br class="br_on_430">体験いただけます
                     </p>
                 </div>
                 <div class="emphasis-gray">
-                  <h3><span>限られた予約枠で、一流の技術と最高の満足感を体感いただけます</span></h3>
+                  <h3><span>限られた予約枠で、<br class="br_on_992">一流の技術と最高の満足感を<br class="br_on_430">体感いただけます</span></h3>
                 </div>
             </section>
+            <!-- <hr> -->
             <section class="section03">
-              <p>
-                お客様の中には、自分に合う美容師と巡りあうために<br>
-                美容室を転々としている方も少なくありません
-              </p>
-              <p>
-                その中でクーポン利用などにもとらわれずに、最高の特別感を感じていただくことで<br>
-                お客様と美容師、双方の満足感をより向上したいと考えております。
-              </p>
+              <div class="container">
+                <p>
+                  お客様の中には、<br class="br_on_430">自分に合う美容師と巡りあうために<br>
+                  美容室を転々としている方も少なくありません
+                </p>
+                <p>
+                  その中でクーポン利用などにもとらわれずに、<br class="br_on_992">最高の特別感を感じていただくことで<br>
+                  お客様と美容師、<br class="br_on_430">双方の満足感をより向上したいと考えております。
+                </p>
+              </div>
             </section>
             <section class="section04">
-              <img src="../../images/stylists001.png" alt="スタイリスト一覧" class="img-fluid">
+              <div class="container">
+                <img src="../../images/stylists001.png" alt="スタイリスト一覧" class="img-fluid">
               <img src="../../images/stylists002.png" alt="スタイリスト一覧" class="img-fluid">
+              </div>
             </section>
         </div>
-        <!-- <section class="footer">
+        <section class="footer">
             <div class="container">
               <div class="row">
                 <div class="col-sm-4 company-footer text-center">
@@ -146,8 +157,9 @@
                 <div class="col-sm-4 text-center">
                   <h5>{{ $t("footer.service") }}</h5>
                   <ul class="p-0" style="list-style: none;">
-                    <li><a href="#">KAMISMA BEAUTY</a></li>
-                    <li><a href="#">NILE BEAUTY</a></li>
+                    <li><a href="https://beauty.kamisma.com" target="_blank">KAMISMA BEAUTY</a></li>
+                    <li><a href="https://beauty.nile.inc" target="_blank">NILE BEAUTY</a></li>
+                    <li><a href="https://kamismax.kamisma.com" target="_blank">KAMISMAX</a></li>
                   </ul>
                 </div>
                 <div class="col-sm-4">
@@ -157,7 +169,31 @@
               <hr>
               <p class="text-center">Copyright INVADE Co., Ltd. All Rights Reserved</p>
             </div>
-        </section> -->
+        </section>
     </div>
 </body>
+<script>
+  const { createApp } = Vue;
+  const { createI18n } = VueI18n;
+
+  const i18n = createI18n({
+    locale: "ja",
+    messages: {
+      en: {
+        footer: {
+          service: "Service",
+        }
+      },
+      ja: {
+        footer: {
+          service: "サービス",
+        }
+      }
+    },
+  });
+
+  const app = createApp({});
+  app.use(i18n);
+  app.mount("#kamismaBeautyApp");
+</script>
 </html>
