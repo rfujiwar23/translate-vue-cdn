@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     
-    <title>インベード株式会社 || INVADE Co., Ltd.</title>
+    <title>インベード株式会社 || INVADE Co., Ltd. - KAMISMA BEAUTY</title>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="https://unpkg.com/vue-i18n@next"></script>
 </head>
@@ -80,16 +80,19 @@
         </div>
         <div class="container-fluid px-0">
             <section class="section01">
-                <p>
-                    <em>KAMISMA BEAUTY<br class="br_on_430">（カミスマビューティー）</em> は<br>
-                    <strong>「美容師のステータス」</strong>・<strong><br class="br_on500">「予約枠の価値」</strong>を<br class="br_on_768">高めるために誕生した<br>
-                    美容における<strong>最高峰の予約サイト</strong>
-                </p>
-                <p>
+              
+                <p v-html="$t('section01.text')"></p>
+                <p v-html="$t('section01.text2')"></p>
+                <!-- <p>
+                  <strong>KAMISMA BEAUTY</strong> is a…<br>
+                  <strong>Top Notch Reservation Site for Hair Salons</strong><br>in order to increase the 
+                  Stylists’ Statuses and the Value of the Reservation Spot.
+                </p> -->
+                <!-- <p>
                     掲載される美容師は、<br class="br_on_992">美容版ミシュラン・<strong>カミカリスマ</strong>に選出された<br class="br_on_768">日本を代表する美容師たち<br>
                     一流の技術に見合った価格以上の満足感を提供し<br>
                     日本の美容価値を世界基準に引き上げ、<br class="br_on_768">新しい予約のカタチで価値の向上に繋げます
-                </p>
+                </p> -->
 
                 <div class="emphasis-gray">
                     <h3><span>KAMISMA BEAUTYだからこそ<br class="br_on_700">受けられる限定メニュー</span></h3>
@@ -104,39 +107,57 @@
                     <!-- <h1>幻の一枠</h1> -->
                 </div>
                 <div class="text-top">
-                    <p>
+                    <!-- <p>
                     一ヶ月に、一枠のみ<br>
                     一名のお客様だけが体験できる<br class="br_on_430">最上級のメニュー<br>
                     カミスマビューティー限定のメニューとして、<br class="br_on_576">一流の技術はもちろん<br>
                     最高のひと時・満足感・特別感をご提供します
+                    </p> -->
+                    <p style="white-space:pre-wrap;">
+                      {{ $t("section02.text1") }}<br>
+                      {{ $t("section02.text2") }}<br>
+                      {{ $t("section02.text3") }}
                     </p>
+                    <!-- <p>
+                      一ヶ月に、一枠のみ<br>
+                      一名のお客様だけが体験できる<br class="br_on_430">最上級のメニュー<br>
+                      カミスマビューティー限定のメニューとして、<br class="br_on_576">一流の技術はもちろん<br>
+                      最高のひと時・満足感・特別感をご提供します
+                      </p> -->
                 </div>
                 <hr>
                 <div class="emphasis">
                     <h3><span class="grey-gradient">星の三枠</span></h3>
                 </div>
                 <div class="text-top">
-                    <p>
-                        一ヶ月に、三枠のみ<br>
-                        三名のお客様だけが体験できるメニュー<br>
-                        幻の一枠よりも身近に、<br class="br_on_576">それでいれ最高級の一流技術を<br class="br_on_430">体験いただけます
+                    <p style="white-space:pre-wrap;">
+                      {{ $t("section03.text1") }}<br>
+                      {{ $t("section03.text2") }}<br>
+                      {{ $t("section03.text3") }}
                     </p>
+                    <!-- <p>
+                      一ヶ月に、三枠のみ<br>
+                      三名のお客様だけが体験できるメニュー<br>
+                      幻の一枠よりも身近に、<br class="br_on_576">それでいれ最高級の一流技術を<br class="br_on_430">体験いただけます
+                    </p> -->
                 </div>
                 <div class="emphasis-gray">
-                  <h3><span>限られた予約枠で、<br class="br_on_992">一流の技術と最高の満足感を<br class="br_on_430">体感いただけます</span></h3>
+                  <h3><span>限られた予約枠で、<br class="br_on_992">一流の技術と最高の満足感を<br class="br_on_500">体感いただけます</span></h3>
                 </div>
             </section>
             <!-- <hr> -->
             <section class="section03">
               <div class="container">
-                <p>
-                  お客様の中には、<br class="br_on_430">自分に合う美容師と巡りあうために<br>
+                <!-- <p>
+                  お客様の中には、<br class="br_on_500">自分に合う美容師と巡りあうために<br>
                   美容室を転々としている方も少なくありません
-                </p>
-                <p>
+                </p> -->
+                <p style="white-space:pre-wrap;">{{ $t("section04.text1") }}</p>
+                <p style="white-space:pre-wrap;">{{ $t("section04.text2") }}</p>
+                <!-- <p>
                   その中でクーポン利用などにもとらわれずに、<br class="br_on_992">最高の特別感を感じていただくことで<br>
                   お客様と美容師、<br class="br_on_430">双方の満足感をより向上したいと考えております。
-                </p>
+                </p> -->
               </div>
             </section>
             <section class="section04">
@@ -180,18 +201,61 @@
     locale: "ja",
     messages: {
       en: {
+        section01: {
+          text: '<strong>KAMISMA BEAUTY</strong> is a…<br><strong>Top Notch Reservation Site<br class="br_on_500"> for Hair Salons</strong><br>in order to increase the Stylists’ Statuses and the Value of the Reservation Spot.',
+          text2: 'The listed stylists are the ones selected into<br> <strong>Kami Charisma</strong> (stylists version of Michelin Guide), representing Japan. <br>By providing the first class skills of the stylists, we aim to make the value into a global standard, and increase the value of new reservation system.',
+        },
+        section02: {
+          text1:  'One Reservation Spot a Month' ,
+          text2: 'A First Class Menu for Only ONE Customer',
+          text3: 'Exclusive Menu via Kamisma Beauty, \nProviding the Specialty, Top Notch Satisfaction, and the Best Time Spent.',
+        },
+        section03: {
+          text1: 'Three Reservation Spots a Month.',
+          text2: 'Only available to three persons.',
+          text3: 'As same as Illusionary Reservation Spot, \nBeing Able to Experience First Class Skills of the Stylists'
+        },
+        section04: {
+          text1: 'For some people, they may go from salon to salon to match their needs and preferences.',
+          text2: 'Without using coupons or any sort of discounts, we hope to match customers and stylists, and improve satisfactions of both.'
+        },
         footer: {
           service: "Service",
         }
       },
       ja: {
+        section01: {
+          text: '<em>KAMISMA BEAUTY<br class="br_on_480">（カミスマビューティー）</em> は<br><strong>「美容師のステータス」</strong>・<strong><br class="br_on_500">「予約枠の価値」</strong>を<br class="br_on_768">高めるために誕生した<br>美容における<strong>最高峰の予約サイト</strong>',
+          text2: '掲載される美容師は、<br class="br_on_992">美容版ミシュラン・<strong>カミカリスマ</strong>に選出された<br class="br_on_768">日本を代表する美容師たち<br>一流の技術に見合った価格以上の満足感を提供し<br>日本の美容価値を世界基準に引き上げ、<br class="br_on_768">新しい予約のカタチで価値の向上に繋げます'
+        },
+        section02: {
+          text1:  '一ヶ月に、一枠のみ',
+          text2: '一名のお客様だけが体験できる最上級のメニュー',
+          text3: 'カミスマビューティー限定のメニューとして、\n一流の技術はもちろん\n最高のひと時・満足感・特別感をご提供します',
+        },
+        section03: {
+          text1: '一ヶ月に、三枠のみ',
+          text2: '三名のお客様だけが体験できるメニュー',
+          text3: '幻の一枠よりも身近に、\nそれでいれ最高級の一流技術を体験いただけます'
+        },
+        section04: {
+          text1: 'お客様の中には、\n自分に合う美容師と巡りあうために\n美容室を転々としている方も少なくありません',
+          text2: 'その中でクーポン利用などにもとらわれずに、\n最高の特別感を感じていただくことで\nお客様と美容師、双方の満足感を\nより向上したいと考えております。'
+        },
         footer: {
           service: "サービス",
+        }
+      },
+      methods: {
+        htmlToText: function (html) {
+          this.utilityEl.innerHTML = html;
+          return this.utilityEl.textContent;
         }
       }
     },
   });
 
+  // console.log($t("footer.service"));
   const app = createApp({});
   app.use(i18n);
   app.mount("#kamismaBeautyApp");

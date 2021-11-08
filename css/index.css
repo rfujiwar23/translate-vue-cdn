@@ -463,6 +463,9 @@ body {
 .wrapper2 .br_on_500 {
   display: none;
 }
+.wrapper2 .br_on_480 {
+  display: none;
+}
 .wrapper2 .br_on_430 {
   display: none;
 }
@@ -503,15 +506,13 @@ body {
 }
 .wrapper2 .section01 .emphasis-gray {
   margin-top: 5vh;
+  background: #d3d3d3;
+  padding: 3vh 0;
 }
 .wrapper2 .section01 .emphasis-gray h3 {
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-.wrapper2 .section01 .emphasis-gray h3 span {
-  background: #d3d3d3;
-  padding: 5px 20px;
 }
 .wrapper2 .section02 {
   background: url(../images/pattern.png);
@@ -537,15 +538,13 @@ body {
 }
 .wrapper2 .section02 .emphasis-gray {
   margin-top: 5vh;
+  background: #d3d3d3;
+  padding: 3vh 0;
 }
 .wrapper2 .section02 .emphasis-gray h3 {
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-.wrapper2 .section02 .emphasis-gray h3 span {
-  background: #d3d3d3;
-  padding: 5px 20px;
 }
 .wrapper2 .section02 .text {
   margin: 4vh auto;
@@ -582,6 +581,9 @@ body {
   text-align: center;
   font-size: 1.25em;
   line-height: 2em;
+}
+.wrapper2 .footer .container .company-footer h5 {
+  font-size: 1em;
 }
 
 .modal {
@@ -720,8 +722,11 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  .br_on_500 {
+  .wrapper2 .br_on_500 {
     display: block;
+  }
+  .wrapper2 .section01 p {
+    padding: 0 10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -743,6 +748,10 @@ body {
   .wrapper .part4 .ac-container .each label span.older {
     padding: 0 5px;
   }
+
+  .wrapper2 .br_on_480 {
+    display: block;
+  }
 }
 @media screen and (max-width: 430px) {
   .wrapper2 .br_on_430 {
@@ -750,6 +759,9 @@ body {
   }
   .wrapper2 .section01 p {
     font-size: 1em;
+  }
+  .wrapper2 .section01 .emphasis-gray h3 span {
+    font-size: 0.8em;
   }
   .wrapper2 .section03 .container p {
     font-size: 1em;

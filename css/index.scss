@@ -556,6 +556,9 @@ body {
     .br_on_500 {
         display: none;
     }
+    .br_on_480 {
+        display: none;
+    }
     .br_on_430 {
         display: none;
     }
@@ -598,14 +601,12 @@ body {
 
         .emphasis-gray {
             margin-top:5vh;
+            background:#d3d3d3;
+            padding:3vh 0;
             h3 {
                 text-align: center;
                 color:#fff;
                 text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-                span {
-                    background:#d3d3d3;
-                    padding:5px 20px;
-                }
             }
         }
     }
@@ -634,14 +635,12 @@ body {
         
         .emphasis-gray {
             margin-top:5vh;
+            background:#d3d3d3;
+            padding:3vh 0;
             h3 {
                 text-align: center;
                 color:#fff;
                 text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-                span {
-                    background:#d3d3d3;
-                    padding:5px 20px;
-                }
             }
         }
         .text {
@@ -682,7 +681,15 @@ body {
             }
         }
     }
-
+    .footer {
+        .container {
+            .company-footer {
+                h5 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
 }
 
 .modal {
@@ -884,8 +891,15 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-    .br_on_500 {
-        display: block;
+    .wrapper2 {
+        .br_on_500 {
+            display: block;
+        }
+        .section01 {
+            p {
+                padding: 0 10px;
+            } 
+        }
     }
 }
 
@@ -920,6 +934,12 @@ body {
             }
         }
     }
+
+    .wrapper2 {
+        .br_on_480 {
+            display: block;
+        }
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -930,6 +950,13 @@ body {
         .section01 {
             p {
                 font-size: 1em;
+            }
+            .emphasis-gray {
+                h3 {
+                    span {
+                        font-size:0.8em;
+                    }
+                }
             }
         }
         .section03 {
