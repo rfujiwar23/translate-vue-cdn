@@ -26,8 +26,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     
     <title>KAMISMAX - インベード株式会社 || INVADE Co., Ltd.</title>
-    <script src="https://unpkg.com/vue@next"></script>
-    <script src="https://unpkg.com/vue-i18n@next"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <!-- <script src="https://unpkg.com/vue-i18n@next"></script> -->
 </head>
 
 <body>
@@ -143,6 +144,48 @@
                       インタビューや対談、本⾳トークやヘアイベントなどエンターテイメント性のある豊富な
                       ラインナップで楽しみながら学べる環境を提供します。</h6>
                   </div>
+                  <div class="row" id="style">
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0" v-for="stylist in stylists">
+                      <img :src="stylist.imageLink" :alt="stylist.name" class="img-fluid">
+                      <!-- <p>{{stylist.name}}</p> -->
+                    </div>
+                    <!-- <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/1.png" alt="stylist 1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/2.png" alt="stylist 2" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/3.png" alt="stylist 3" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/4.png" alt="stylist 4" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/5.png" alt="stylist 5" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/6.png" alt="stylist 6" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/8.png" alt="stylist 7" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/9.png" alt="stylist 8" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/10.png" alt="stylist 9" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/11.png" alt="stylist 10" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/12.png" alt="stylist 11" class="img-fluid">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
+                      <img src="../../images/stylists/13.png" alt="stylist 12" class="img-fluid">
+                    </div> -->
+                  </div>
                 </div>
                 
                 <div class="characteristics second">
@@ -154,12 +197,12 @@
                       豊富なラインナップで楽しみながら学べる環境を提供します。</h6>
                       <h5>番組一覧</h5>
                       <ul>
-                        <li>トレンド ／ </li>
-                        <li>スタディ ／ </li>
-                        <li>リアリティ ／ </li>
-                        <li>バラエティ ／ </li>
-                        <li>スペシャル ／ </li>
-                        <li>エンターテインメント ／ </li>
+                        <li>トレンド／</li>
+                        <li>スタディ／</li>
+                        <li>リアリティ／</li>
+                        <li>バラエティ／</li>
+                        <li>スペシャル／</li>
+                        <li>エンターテインメント／</li>
                         <li>カミカリスマ</li>
                       </ul>
 
@@ -213,9 +256,9 @@
 
             <section class="section04">
               <div class="container-fluid">
-                <p><span><strong>公式サイト：</strong><a href="https://kamismax.kamisma.com/">https://kamismax.kamisma.com/</a></span></p>
-                <p><span><strong>解説サイト：</strong><a href="https://kamismax.kamisma.com/service1/">https://kamismax.kamisma.com/service1/</a></span></p>
-                <p><span><strong>サンプル映像：</strong><a href="https://kamismax.kamisma.com/service2/">https://kamismax.kamisma.com/service2/</a></span></p>
+                <p><span><strong>公式サイト：</strong><br class="line-break500"><a href="https://kamismax.kamisma.com/">https://kamismax.kamisma.com/</a></span></p>
+                <p><span><strong>解説サイト：</strong><br class="line-break500"><a href="https://kamismax.kamisma.com/service1/">https://kamismax.kamisma.com/service1/</a></span></p>
+                <p><span><strong>サンプル映像：</strong><br class="line-break500"><a href="https://kamismax.kamisma.com/service2/">https://kamismax.kamisma.com/service2/</a></span></p>
               </div>
             </section>
           
@@ -323,4 +366,27 @@
   app.use(i18n);
   app.mount("#kamismaBeautyApp");
 </script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> -->
+<script>
+  var vm = new Vue({
+  el: '#style',
+    data: {
+      stylists: [
+        {id:1, name: 'name', imageLink: '../../images/stylists/1.png'},
+        {id:2, name: 'name', imageLink: '../../images/stylists/2.png'},
+        {id:3, name: 'name', imageLink: '../../images/stylists/3.png'},
+        {id:4, name: 'name', imageLink: '../../images/stylists/4.png'},
+        {id:5, name: 'name', imageLink: '../../images/stylists/5.png'},
+        {id:6, name: 'name', imageLink: '../../images/stylists/6.png'},
+        {id:7, name: 'name', imageLink: '../../images/stylists/8.png'},
+        {id:8, name: 'name', imageLink: '../../images/stylists/9.png'},
+        {id:9, name: 'name', imageLink: '../../images/stylists/10.png'},
+        {id:10, name: 'name', imageLink: '../../images/stylists/11.png'},
+        {id:11, name: 'name', imageLink: '../../images/stylists/12.png'},
+        {id:12, name: 'name', imageLink: '../../images/stylists/13.png'},
+        ]
+    }
+  });
+</script>
+
 </html>

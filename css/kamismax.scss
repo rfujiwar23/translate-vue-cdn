@@ -3,10 +3,15 @@ $kmax-black: rgba(0,0,0);
 $kmax-white: rgba(233,233,233);
 
 
+
 .wrapper3 {
     .navbar {
         background:#9DE7D7;
     }
+    .line-break500 {
+        display: none;
+    }
+    
     .title-banner {
         background-color:$kmax-black;
         aspect-ratio: 3/1;
@@ -51,8 +56,10 @@ $kmax-white: rgba(233,233,233);
     }
     .section02 {
         padding:5vh 0;
+        background: $kmax-orange;
         .container-fluid {
             .information {
+                color: #fff;
                 .text {
                     h4 {
                         font-size: 1.25em;
@@ -97,13 +104,24 @@ $kmax-white: rgba(233,233,233);
                         font-weight: normal;
                         line-height: 2em;
                     }
+                    h5 {
+                        font-weight: bold;
+                        margin-top: 2vh;
+                    }
                 }
             }
             .second {
                 ul {
                     list-style-type: none;
+                    // background:rgba(255,255,255,0.8);
+                    background: rgb(242,103,34);
+                    background: linear-gradient(135deg, rgba(242,103,34,1) 0%, rgba(240,176,144,1) 100%);
+                    // border: 1px solid #9a9a9a;
                     li {
                         display: inline-block;
+                        font-size: 0.9em;
+                        color: #fff;
+                        font-weight: bold;
                     }
                 }
             }
@@ -136,27 +154,81 @@ $kmax-white: rgba(233,233,233);
         .container-fluid {
             text-align: center;
             p {
-                font-size: 1em;
+                font-size: 1.1em;
                 
                 span {
                     // font-weight: bold;
-                    
+                    strong {
+                        padding-bottom: 3px;
+                        border-bottom: 1px solid #9a9a9a;
+                    }
                     a {
-                        font-weight: normal;
-                        color: $kmax-orange;
+                        // font-weight: bold;
+                        color:$kmax-white;
+                        background: $kmax-orange;
                         text-decoration: none;
-                        padding:3px 5px;
+                        padding:3px 10px;
+                        margin-left: 5px;
+                        box-shadow: 3px 3px 6px rgba(193,193,193,1);
+                        border-radius: 4px;
                         &:hover {
                             // font-weight: bold;
                             text-decoration: underline;
-                            color:$kmax-white;
-                            background: $kmax-orange;
-                            
+                            color: $kmax-orange;
+                            background: $kmax-white;
                         }
                     }
                 }
             }
         }
     }
+    .footer {
+        padding: 2vh 0;
+        font-family: 'Shippori Mincho', serif;
+        .container {
+            .company-footer {
+                h5 {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
 
+
+@media screen and (max-width: 500px) {
+    .wrapper3 {
+        .line-break500 {
+            display: block;
+        }
+        .section04 {
+            .container-fluid {
+                p {
+                    font-size: 1em;
+                    line-height: 2em;
+                    span {
+                        strong {
+                            padding-bottom: 3px;
+                            border-bottom: 1px solid #9a9a9a;
+                        }
+                        a {
+                            color:$kmax-white;
+                            background: $kmax-orange;
+                            text-decoration: none;
+                            padding:3px 10px;
+                            margin-left: 0;
+                            box-shadow: 3px 3px 6px rgba(193,193,193,1);
+                            border-radius: 4px;
+                            &:hover {
+                                // font-weight: bold;
+                                text-decoration: underline;
+                                color: $kmax-orange;
+                                background: $kmax-white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
