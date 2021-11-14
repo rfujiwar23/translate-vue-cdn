@@ -1,0 +1,60 @@
+$kmax-orange: #F26722;
+$kmax-black: rgba(0,0,0);
+$kmax-white: rgba(233,233,233);
+
+
+
+.wrapper4 {
+    .navbar {
+        background:#9DE7D7;
+    }
+    .title-banner {
+        background:url(../images/nile/top-bg1.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        aspect-ratio: 3/1;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        position: relative;
+        .logo-area {
+            position:absolute;
+            top:50%;
+            left: 50%;
+            transform:translate(-50%, -50%);
+            background:rgba(255,255,255,0.7);
+            padding: 30px;
+            .logo-img {
+                width:60%;
+                margin:0 auto;
+            }
+            h3 {
+                color:$kmax-white;
+                margin-top: 5vh;
+            }
+            h5 {
+                color: $kmax-white;
+            }
+        }
+    }
+
+    section {
+        padding: 4vh 0;
+    }
+    
+    .section02 {
+        .container {
+            .about {
+                background: crimson;
+                color:white;
+                width: 80%;
+                margin:0 auto;
+                padding:30px 20px;
+                p {
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+    
+}

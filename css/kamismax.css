@@ -47,21 +47,46 @@
   padding: 5vh 0;
   background: #F26722;
 }
+.wrapper3 .section02 .container-fluid .row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 .wrapper3 .section02 .container-fluid .information {
   color: #fff;
+  background: #ff8d54;
+  box-shadow: 3px 3px 6px rgba(50, 50, 50, 0.45);
+}
+.wrapper3 .section02 .container-fluid .information .title {
+  background: black;
+  padding: 8px;
+  border-radius: 4px;
+}
+.wrapper3 .section02 .container-fluid .information .title h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+.wrapper3 .section02 .container-fluid .information .text {
+  padding-top: 3vh;
+  border-bottom: 1px dashed #fff;
+}
+.wrapper3 .section02 .container-fluid .information .text:nth-last-child(1) {
+  border-bottom: none;
 }
 .wrapper3 .section02 .container-fluid .information .text h4 {
   font-size: 1.25em;
+  text-align: center;
 }
 .wrapper3 .section02 .container-fluid .information .text p {
   font-size: 1em;
   padding: 1vh 20px;
 }
+.wrapper3 .section02 .container-fluid .in-two {
+  height: 100%;
+}
 .wrapper3 .section03 {
   padding: 5vh 0;
 }
 .wrapper3 .section03 .container-fluid .characteristics {
-  padding: 3vh 20px;
   margin: 6vh auto;
   background: #e9e9e9;
   background: linear-gradient(180deg, #e9e9e9 0%, #d7d7d7 100%);
@@ -93,6 +118,33 @@
   font-weight: bold;
   margin-top: 2vh;
 }
+.wrapper3 .section03 .container-fluid .first {
+  padding: 3vh 0px 0px;
+}
+.wrapper3 .section03 .container-fluid .first .bottom-text .and-more {
+  background: #ff9e6e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper3 .section03 .container-fluid .first .bottom-text .and-more .inner-text {
+  color: #fff;
+}
+.wrapper3 .section03 .container-fluid .first .bottom-text p.smaller {
+  font-size: 0.8em;
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding: 20px 0;
+}
+.wrapper3 .section03 .container-fluid .first .bottom-text p.smaller span {
+  color: #F26722;
+  font-weight: bold;
+  padding: 0 3px;
+}
+.wrapper3 .section03 .container-fluid .second {
+  padding: 3vh 20px;
+}
 .wrapper3 .section03 .container-fluid .second ul {
   list-style-type: none;
   background: #f26722;
@@ -103,6 +155,9 @@
   font-size: 0.9em;
   color: #fff;
   font-weight: bold;
+}
+.wrapper3 .section03 .container-fluid .third {
+  padding: 3vh 20px;
 }
 .wrapper3 .section03 .container-fluid .third .multi-angle {
   padding: 30px;
@@ -161,6 +216,12 @@
 @media screen and (max-width: 500px) {
   .wrapper3 .line-break500 {
     display: block;
+  }
+  .wrapper3 .section03 .container-fluid .characteristics {
+    width: 100%;
+  }
+  .wrapper3 .section03 .container-fluid .characteristics .char-text {
+    width: 90%;
   }
   .wrapper3 .section04 .container-fluid p {
     font-size: 1em;

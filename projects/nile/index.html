@@ -4,9 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../../css/index.css">
-    
-
+    <link rel="stylesheet" href="../../css/nile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
@@ -15,22 +13,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script> -->
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     
     <title>NILE - インベード株式会社 || INVADE Co., Ltd. - KAMISMA BEAUTY</title>
-    <script src="https://unpkg.com/vue@next"></script>
-    <script src="https://unpkg.com/vue-i18n@next"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 </head>
 
 <body>
-    <div class="wrapper2" id="kamismaBeautyApp">
+    <div class="wrapper4" id="nileApp">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="../../images/invade-logo-2.svg" alt="INVADE" height="15"></a>
@@ -62,108 +56,90 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">CONTACT</a>
                   </li>
-                  
+                  <select v-model="$i18n.locale">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                  </select>
                 </ul>
-                <select v-model="$i18n.locale">
-                  <option value="ja">日本語</option>
-                  <option value="en">English</option>
-                </select>
+                
               </div>
             </div>
         </nav>
         <div class="title-banner">
             <div class="logo-area">
                 <div class="logo-img">
-                    <img src="../../images/title-banner001-kmb.png" class="img-fluid">
+                    <img src="../../images/nile/nile-beauty.png" class="img-fluid">
                 </div>
             </div>
         </div>
         <div class="container-fluid px-0">
             <section class="section01">
-              
-                <p v-html="$t('section01.text')"></p>
-                <p v-html="$t('section01.text2')"></p>
-                <!-- <p>
-                  <strong>KAMISMA BEAUTY</strong> is a…<br>
-                  <strong>Top Notch Reservation Site for Hair Salons</strong><br>in order to increase the 
-                  Stylists’ Statuses and the Value of the Reservation Spot.
-                </p> -->
-                <!-- <p>
-                    掲載される美容師は、<br class="br_on_992">美容版ミシュラン・<strong>カミカリスマ</strong>に選出された<br class="br_on_768">日本を代表する美容師たち<br>
-                    一流の技術に見合った価格以上の満足感を提供し<br>
-                    日本の美容価値を世界基準に引き上げ、<br class="br_on_768">新しい予約のカタチで価値の向上に繋げます
-                </p> -->
-
-                <div class="emphasis-gray">
-                    <h3 v-html="$t('section01.text3')"></h3>
-                </div>
-
-
-            </section>
-            <hr>
-            <section class="section02">
-                <div class="emphasis">
-                    <h3><span>{{ $t("section02.title") }}</span></h3>
-                    <!-- <h1>幻の一枠</h1> -->
-                </div>
-                <div class="text-top">
-                    <!-- <p>
-                    一ヶ月に、一枠のみ<br>
-                    一名のお客様だけが体験できる<br class="br_on_430">最上級のメニュー<br>
-                    カミスマビューティー限定のメニューとして、<br class="br_on_576">一流の技術はもちろん<br>
-                    最高のひと時・満足感・特別感をご提供します
-                    </p> -->
-                    <p style="white-space:pre-wrap;">
-                      {{ $t("section02.text1") }}<br>
-                      {{ $t("section02.text2") }}<br>
-                      {{ $t("section02.text3") }}
-                    </p>
-                    <!-- <p>
-                      一ヶ月に、一枠のみ<br>
-                      一名のお客様だけが体験できる<br class="br_on_430">最上級のメニュー<br>
-                      カミスマビューティー限定のメニューとして、<br class="br_on_576">一流の技術はもちろん<br>
-                      最高のひと時・満足感・特別感をご提供します
-                      </p> -->
-                </div>
-                <hr>
-                <div class="emphasis">
-                    <h3><span class="grey-gradient">{{ $t("section03.title") }}</span></h3>
-                </div>
-                <div class="text-top">
-                    <p style="white-space:pre-wrap;">
-                      {{ $t("section03.text1") }}<br>
-                      {{ $t("section03.text2") }}<br>
-                      {{ $t("section03.text3") }}
-                    </p>
-                    <!-- <p>
-                      一ヶ月に、三枠のみ<br>
-                      三名のお客様だけが体験できるメニュー<br>
-                      幻の一枠よりも身近に、<br class="br_on_576">それでいれ最高級の一流技術を<br class="br_on_430">体験いただけます
-                    </p> -->
-                </div>
-                <div class="emphasis-gray">
-                  <h3 v-html="$t('section03.text4')"></h3>
-                </div>
-            </section>
-            <!-- <hr> -->
-            <section class="section03">
               <div class="container">
-                <!-- <p>
-                  お客様の中には、<br class="br_on_500">自分に合う美容師と巡りあうために<br>
-                  美容室を転々としている方も少なくありません
-                </p> -->
-                <p style="white-space:pre-wrap;">{{ $t("section04.text1") }}</p>
-                <p style="white-space:pre-wrap;">{{ $t("section04.text2") }}</p>
-                <!-- <p>
-                  その中でクーポン利用などにもとらわれずに、<br class="br_on_992">最高の特別感を感じていただくことで<br>
-                  お客様と美容師、<br class="br_on_430">双方の満足感をより向上したいと考えております。
-                </p> -->
+                <p>NILE BEAUTYは、世界中の美容企業がいつでもどこでも
+                  オンラインでB2Bマッチングできる全く新しいサービス。</p>
+                
+                <div class="video-area">
+                  <iframe width="560" height="315" 
+                  src="https://www.youtube.com/embed/niUeC32DTLA"
+                   title="YouTube video player" frameborder="0" 
+                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                   allowfullscreen>
+                  </iframe>
+                </div>
+                <div class="video-bottom-text">
+                  <p>24時間365日、スマホひとつで、新しいビジネスパートナー見つけることができます。</p>
+                </div>
+              </div>
+            </section>
+            <section class="section02">
+              <div class="container">
+                <div class="about">
+                  <p v-html="$t('section02.about')"></p>
+                </div>
+              </div>
+            </section>
+            <section class="section03" id="app-jp">
+              
+              <div class="container">
+                <h3>With NILE, you can...</h3>
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6 mb-3" v-for="capability in capabilities">
+                    <div class="card h-100" data-aos="zoom-right">
+                      <img :src="capability.image" alt="exhibition" class="img-fluid">
+                      <div class="card-body">
+                        <p class="card-text smaller"><strong>{{ capability.number }}. </strong>{{ capability.text }} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
             <section class="section04">
-              <div class="container">
-                <img src="../../images/stylists001.png" alt="スタイリスト一覧" class="img-fluid">
-              <img src="../../images/stylists002.png" alt="スタイリスト一覧" class="img-fluid">
+              <div class="container" id="new-jp">
+                <h2 class="mb-3">You can start easily with NILE.</h2>
+                  <div class="row col-xl-10 offset-xl-1 col-lg-12 col-md-12">
+                    <div class="col-lg-4 col-md-4 accomplishments" v-for="accomplish in accomplishments">
+                      <div class="inner-wrapper">
+                        <div class="section07-area2">
+                          {{accomplish.task}} 
+                      </div>
+                      <div class="img">
+                          <img :src="accomplish.image" alt="image" class="img-fluid">
+                          <div class="img-text">
+                              <p>{{accomplish.solution}}</p>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-center my-3 small">* {{message}}</p>
+              </div>
+              <div class="container" id="conclusion">
+                <div v-html="message"></div>
+                <h6>{{register}}</h6>
+                <p><a href="https://beauty.nile.inc">https://beauty.nile.inc</a></p>
+                <h6>{{service}}</h6>
+                <p><a href="https://beauty.nile.inc/service">https://beauty.nile.inc/service</a></p>
               </div>
             </section>
         </div>
@@ -194,64 +170,66 @@
     </div>
 </body>
 <script>
+var vm = new Vue ({
+    el: '#app-jp',
+    data: {
+        capabilities: [
+            {number: 1, text: '出展にかかる時間やコストを大幅に削減。必要なのは月額費用と商談チャットチケット代だけ(商談企業はチケット代以外無料)。', image: '../../images/nile/img001.png'},
+            {number: 2, text: '国際的なビジネスマッチングができます。', image: '../../images/nile/img001.png'},
+            {number: 3, text: '商談用チャット機能あり。専用スタンプで、気軽にやり取りができる。やりとりの進捗・ステータス管理ができる。', image: '../../images/nile/img001.png'},
+            {number: 4, text: '便利な多言語機能（英語・フランス語・スペイン語・中国語・日本語）。', image: '../../images/nile/img001.png'},
+            {number: 5, text: 'NILEに出展（Exhibitor）すれば企業情報、商品情報、たくさんのコンテンツ記事を登録企業に配信することができます（出展企業だけの機能）', image: '../../images/nile/img001.png'},
+            {number: 6, text: 'NILEに商談企業（Negotiator）として登録すれば、出展企業の情報をいつでも気軽に見る、集める、話すことができます。', image: '../../images/nile/img001.png'},
+            {number: 7, text: '紹介・招待システムあり。お知り合いの企業をサイトに招待・登録していただくと、無料商談チケットをプレゼント。', image: '../../images/nile/img001.png'},
+        ]
+    }
+});
+
+var tr = new Vue ({
+    el: '#new-jp',
+    data: {
+        accomplishments: [
+            {task: 'これまでのサービスでは、アプリやソフトをダウンロードしなければものばかり*', solution: 'NILEは、ダウンロードの必要なし！ネットがつながれば、直ぐに利用できます！', image:'../../images/nile/st001.png' },
+            {task: 'どれくらいの企業がアクセスしたか、マッチング率などの情報を知ることができない*', solution: 'NILEは企業管理画面も充実！訪問者数分析はもちろん、チケット購入まで一元管理できます！', image:'../../images/nile/st002.png' },
+            {task: '展示会イベントやウェビナーを実施してもなかなか成約率が上がらない*', solution: '商談用チャットのスタンプを使えば、より簡単・円滑ににコミュニケーションを取れます！', image:'../../images/nile/st003.png' },
+        ],
+        message: ' これらは、これまでのサービスが直面してきた課題です。',
+    }
+})
+
+var tr = new Vue ({
+  el: "#conclusion",
+  data: {
+    message: '<p>NILE BEAUTYは、これまでのビジネスのあり方を大きく変える、その一翼を担う国際的なB2Bマッチングサービスです。</p><p>ぜひ、NILE BEAUTYを活用していただき、新しいビジネスの出会いを見つけてください。</p>',
+    register: 'ご登録はこちら',
+    service: 'サービス概要'
+  }
+})
+
+</script>
+<script src="https://unpkg.com/vue@next"></script>    
+<script src="https://unpkg.com/vue-i18n@next"></script>
+<script>
   const { createApp } = Vue;
   const { createI18n } = VueI18n;
 
   const i18n = createI18n({
     locale: "ja",
     messages: {
-      en: {
-        section01: {
-          text: '<strong>KAMISMA BEAUTY</strong> is a…<br><strong>Top Notch Reservation Site<br class="br_on_500"> for Hair Salons</strong><br>in order to increase the Stylists’ Statuses and the Value of the Reservation Spot.',
-          text2: 'The listed stylists are the ones selected into<br> <strong>Kami Charisma</strong> (stylists version of Michelin Guide), representing Japan. <br>By providing the first class skills of the stylists, we aim to make the value into a global standard, and increase the value of new reservation system.',
-          text3: 'The Exclusive Menu via Kamisma Beauty'
-        },
-        section02: {
-          title: 'Illusionary Reservation Spot',
-          text1: 'One Reservation Spot a Month' ,
-          text2: 'A First Class Menu for Only ONE Customer',
-          text3: 'Exclusive Menu via Kamisma Beauty, \nProviding the Specialty, Top Notch Satisfaction, and the Best Time Spent.',
-        },
-        section03: {
-          title: 'Exclusive Three Spots',
-          text1: 'Three Reservation Spots a Month.',
-          text2: 'Only available to three persons.',
-          text3: 'As same as Illusionary Reservation Spot, \nBeing Able to Experience First Class Skills of the Stylists',
-          text4: '<span>Experience the First Class Skills and the Best Satisfaction with Limited Reservation Spots</span>'
-        },
-        section04: {
-          text1: 'For some people, they may go from salon to salon to match their needs and preferences.',
-          text2: 'Without using coupons or any sort of discounts, we hope to match customers and stylists, and improve satisfactions of both.'
-        },
-        footer: {
-          service: "Service",
-        }
-      },
       ja: {
-        section01: {
-          text: '<em>KAMISMA BEAUTY<br class="br_on_480">（カミスマビューティー）</em> は<br><strong>「美容師のステータス」</strong>・<strong><br class="br_on_500">「予約枠の価値」</strong>を<br class="br_on_768">高めるために誕生した<br>美容における<strong>最高峰の予約サイト</strong>',
-          text2: '掲載される美容師は、<br class="br_on_992">美容版ミシュラン・<strong>カミカリスマ</strong>に選出された<br class="br_on_768">日本を代表する美容師たち<br>一流の技術に見合った価格以上の満足感を提供し<br>日本の美容価値を世界基準に引き上げ、<br class="br_on_768">新しい予約のカタチで価値の向上に繋げます',
-          text3: '<span>KAMISMA BEAUTYだからこそ<br class="br_on_700">受けられる限定メニュー</span>'
-        },
         section02: {
-          title: '幻の一枠',
-          text1:  '一ヶ月に、一枠のみ',
-          text2: '一名のお客様だけが体験できる最上級のメニュー',
-          text3: 'カミスマビューティー限定のメニューとして、\n一流の技術はもちろん\n最高のひと時・満足感・特別感をご提供します',
-        },
-        section03: {
-          title: '星の三枠',
-          text1: '一ヶ月に、三枠のみ',
-          text2: '三名のお客様だけが体験できるメニュー',
-          text3: '幻の一枠よりも身近に、\nそれでいれ最高級の一流技術を体験いただけます',
-          text4: '<span>限られた予約枠で、<br class="br_on_992">一流の技術と最高の満足感を<br class="br_on_500">体感いただけます</span>'
-        },
-        section04: {
-          text1: 'お客様の中には、\n自分に合う美容師と巡りあうために\n美容室を転々としている方も少なくありません',
-          text2: 'その中でクーポン利用などにもとらわれずに、\n最高の特別感を感じていただくことで\nお客様と美容師、双方の満足感を\nより向上したいと考えております。'
+          about: 'これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br> NILE BEAUTYは企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br> NILE BEAUTYは企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、オンラインだからこそ実現できる良質な「偶然の出会い」を提供し、長く続くビジネスをサポートいたします。',
         },
         footer: {
           service: "サービス",
+        }
+      },
+      en: {
+        section02: {
+          about: 'Up until recently the way we would gather information, negotiate, and do business relied on meeting in person, and attending business events.  With the use of social media, and the advent of 5G, the information society is rapidly changing, and the way of business is changing along with it.<br> <strong>NILE BEAUTY</strong> provides the platform to matches business to business, business to individuals.<br>Not relying on the narrowed down information, we hope to create a service where you can meet by chance, and being able to create a long lasting business relationships.'
+        },
+        footer: {
+          service: "Service",
         }
       },
       methods: {
@@ -266,6 +244,8 @@
   // console.log($t("footer.service"));
   const app = createApp({});
   app.use(i18n);
-  app.mount("#kamismaBeautyApp");
+  app.mount("#nileApp");
 </script>
+
+
 </html>

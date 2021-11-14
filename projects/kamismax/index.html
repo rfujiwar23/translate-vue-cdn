@@ -26,13 +26,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     
     <title>KAMISMAX - インベード株式会社 || INVADE Co., Ltd.</title>
-    <!-- <script src="https://unpkg.com/vue@next"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <!-- <script src="https://unpkg.com/vue-i18n@next"></script> -->
+    
 </head>
 
 <body>
-    <div class="wrapper3" id="kamismaBeautyApp">
+    <div class="wrapper3" id="kamismaxApp">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><img src="../../images/invade-logo-2.svg" alt="INVADE" height="15"></a>
@@ -108,10 +107,12 @@
             <section class="section02">
               
               <div class="container-fluid">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="information p-3">
-                      <h3>【KAMISMAXのこだわり・特徴】</h3>
+                <div class="row row-flex">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="information in-two p-3">
+                      <div class="title">
+                        <h3><span>【KAMISMAXのこだわり・特徴】</span></h3>
+                      </div>
                       <div class="text">
                         <h4><span>1. </span>厳選されたキャスティング</h4>
                         <p>一流の証、カミカリスマを受賞された美容師・美容室の方々を中心に出演者をキャスティング。一流の技術はもちろん、その思考や人物像にも触れることができる内容もお届けします。</p>
@@ -126,9 +127,10 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-6">
-                    <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 colsm-6 offset-sm-3">
-                      <img src="../../images/silver_0000_silver-shimmery-paper-background.png" alt="KAMISMAX" class="img-fluid">
+                  <div class="col-lg-6 col-md-6">
+                    
+                    <div class="in-two">
+                      <img src="../../images/hand-image.png" alt="KAMISMAX" class="img-fluid">
                     </div>
                   </div>
                 </div>
@@ -144,47 +146,23 @@
                       インタビューや対談、本⾳トークやヘアイベントなどエンターテイメント性のある豊富な
                       ラインナップで楽しみながら学べる環境を提供します。</h6>
                   </div>
-                  <div class="row" id="style">
+                  <div class="row mx-0" id="style">
                     <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0" v-for="stylist in stylists">
                       <img :src="stylist.imageLink" :alt="stylist.name" class="img-fluid">
                       <!-- <p>{{stylist.name}}</p> -->
                     </div>
-                    <!-- <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/1.png" alt="stylist 1" class="img-fluid">
+                  </div>
+                  <div class="bottom-text row mx-0">
+                    <div class="col-lg-2 col-md-3 col-sm-3 and-more">
+                      <div class="inner-text">
+                        <p class="text-center mb-0">...and more!</p>
+                      </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/2.png" alt="stylist 2" class="img-fluid">
+                    <div class="col-lg-10 col-md-9 col-sm-9 bg-white">
+                      <p class="smaller"><strong>毎週</strong>豪華メンバーで<strong>新作映像</strong>を配信していきます。<br>
+                        技術だけでなく、<span>KAMISMAX</span>でしか見られない貴重な映像を<br class="line-break500">たくさんお届けしますので、楽しみにしていてください。
+                      乞うご期待！</p>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/3.png" alt="stylist 3" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/4.png" alt="stylist 4" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/5.png" alt="stylist 5" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/6.png" alt="stylist 6" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/8.png" alt="stylist 7" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/9.png" alt="stylist 8" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/10.png" alt="stylist 9" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/11.png" alt="stylist 10" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/12.png" alt="stylist 11" class="img-fluid">
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0">
-                      <img src="../../images/stylists/13.png" alt="stylist 12" class="img-fluid">
-                    </div> -->
                   </div>
                 </div>
                 
@@ -291,6 +269,32 @@
         </section>
     </div>
 </body>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> -->
+<script>
+
+  var vm = new Vue({
+  el: '#style',
+    data: {
+      stylists: [
+        {id:1, name: 'name', imageLink: '../../images/stylists/1.png'},
+        {id:2, name: 'name', imageLink: '../../images/stylists/2.png'},
+        {id:3, name: 'name', imageLink: '../../images/stylists/3.png'},
+        {id:4, name: 'name', imageLink: '../../images/stylists/4.png'},
+        {id:5, name: 'name', imageLink: '../../images/stylists/5.png'},
+        {id:6, name: 'name', imageLink: '../../images/stylists/6.png'},
+        {id:7, name: 'name', imageLink: '../../images/stylists/8.png'},
+        {id:8, name: 'name', imageLink: '../../images/stylists/9.png'},
+        {id:9, name: 'name', imageLink: '../../images/stylists/10.png'},
+        {id:10, name: 'name', imageLink: '../../images/stylists/11.png'},
+        {id:11, name: 'name', imageLink: '../../images/stylists/12.png'},
+        {id:12, name: 'name', imageLink: '../../images/stylists/13.png'},
+        ]
+    }
+  });
+</script>
+<script src="https://unpkg.com/vue@next"></script>    
+<script src="https://unpkg.com/vue-i18n@next"></script>
 <script>
   const { createApp } = Vue;
   const { createI18n } = VueI18n;
@@ -364,29 +368,7 @@
   // console.log($t("footer.service"));
   const app = createApp({});
   app.use(i18n);
-  app.mount("#kamismaBeautyApp");
-</script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> -->
-<script>
-  var vm = new Vue({
-  el: '#style',
-    data: {
-      stylists: [
-        {id:1, name: 'name', imageLink: '../../images/stylists/1.png'},
-        {id:2, name: 'name', imageLink: '../../images/stylists/2.png'},
-        {id:3, name: 'name', imageLink: '../../images/stylists/3.png'},
-        {id:4, name: 'name', imageLink: '../../images/stylists/4.png'},
-        {id:5, name: 'name', imageLink: '../../images/stylists/5.png'},
-        {id:6, name: 'name', imageLink: '../../images/stylists/6.png'},
-        {id:7, name: 'name', imageLink: '../../images/stylists/8.png'},
-        {id:8, name: 'name', imageLink: '../../images/stylists/9.png'},
-        {id:9, name: 'name', imageLink: '../../images/stylists/10.png'},
-        {id:10, name: 'name', imageLink: '../../images/stylists/11.png'},
-        {id:11, name: 'name', imageLink: '../../images/stylists/12.png'},
-        {id:12, name: 'name', imageLink: '../../images/stylists/13.png'},
-        ]
-    }
-  });
+  app.mount("#kamismaxApp");
 </script>
 
 </html>
