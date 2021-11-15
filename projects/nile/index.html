@@ -117,34 +117,45 @@
                     </div>
                   </div>
                 </div>
+                <div class="list">
+                  <ul v-for="cap in capabilities2">
+                    <li><strong>{{cap.number}}.</strong> {{ cap.text }}</li>
+                  </ul>
+                </div>
               </div>
             </section>
             <section class="section04">
               <div class="container" id="new-jp">
                 <h2 class="mb-3">You can start easily with NILE.</h2>
-                  <div class="row col-xl-10 offset-xl-1 col-lg-12 col-md-12">
-                    <div class="col-lg-4 col-md-4 accomplishments" v-for="accomplish in accomplishments">
-                      
-                        <div class="top-text box">
-                          {{accomplish.task}} 
+                  
+                  <div class="row">
+                    <!--ADD CLASSES HERE d-flex align-items-stretch-->
+                    <div class="col-lg-4 col-md-4 mb-3 d-flex align-items-stretch" v-for="accomplish in accomplishments">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column top-text">
+                          <p class="card-text mb-4">{{accomplish.task}}</p>
                         </div>
-                        <div class="img box">
-                            <img :src="accomplish.image" alt="image" class="img-fluid">    
+                        <img :src="accomplish.image" alt="image" class="img-fluid">
+                        <div class="card-body d-flex flex-column bottom-text">
+                          <p class="card-text mb-4">{{accomplish.solution}}</p>
                         </div>
-                        <div class="bottom-text box">
-                          <p>{{accomplish.solution}}</p>
-                        </div>
-                      
+                      </div>
                     </div>
+                    
+                    
                   </div>
                   <p class="text-center my-3 small">* {{message}}</p>
               </div>
               <div class="container" id="conclusion">
-                <div v-html="message"></div>
-                <h6>{{register}}</h6>
-                <p><a href="https://beauty.nile.inc">https://beauty.nile.inc</a></p>
-                <h6>{{service}}</h6>
-                <p><a href="https://beauty.nile.inc/service">https://beauty.nile.inc/service</a></p>
+                <div class="to-end" v-html="message"></div>
+                <div class="to-link">
+                  <h6>{{register}}</h6>
+                  <p class="link"><a href="https://beauty.nile.inc">https://beauty.nile.inc</a></p>
+                </div>
+                <div class="to-link">
+                  <h6>{{service}}</h6>
+                  <p class="link"><a href="https://beauty.nile.inc/service">https://beauty.nile.inc/service</a></p>
+                </div>
               </div>
             </section>
         </div>
@@ -183,9 +194,11 @@ var vm = new Vue ({
             {number: 2, text: '国際的なビジネスマッチングができます。', image: '../../images/nile/img002.png'},
             {number: 3, text: '商談用チャット機能あり。専用スタンプで、気軽にやり取りができる。やりとりの進捗・ステータス管理ができる。', image: '../../images/nile/img003.png'},
             {number: 4, text: '便利な多言語機能（英語・フランス語・スペイン語・中国語・日本語）。', image: '../../images/nile/img004.png'},
-            {number: 5, text: 'NILEに出展（Exhibitor）すれば企業情報、商品情報、たくさんのコンテンツ記事を登録企業に配信することができます（出展企業だけの機能）', image: '../../images/nile/img001.png'},
-            {number: 6, text: 'NILEに商談企業（Negotiator）として登録すれば、出展企業の情報をいつでも気軽に見る、集める、話すことができます。', image: '../../images/nile/img001.png'},
-            {number: 7, text: '紹介・招待システムあり。お知り合いの企業をサイトに招待・登録していただくと、無料商談チケットをプレゼント。', image: '../../images/nile/img001.png'},
+        ],
+        capabilities2: [
+            {number: 5, text: 'NILEに出展（Exhibitor）すれば企業情報、商品情報、たくさんのコンテンツ記事を登録企業に配信することができます（出展企業だけの機能）'},
+            {number: 6, text: 'NILEに商談企業（Negotiator）として登録すれば、出展企業の情報をいつでも気軽に見る、集める、話すことができます。'},
+            {number: 7, text: '紹介・招待システムあり。お知り合いの企業をサイトに招待・登録していただくと、無料商談チケットをプレゼント。'},
         ]
     }
 });
