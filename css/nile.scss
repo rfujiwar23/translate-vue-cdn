@@ -112,13 +112,18 @@ $nile-green: #037D75;
         .card {
             border-radius: 10px 10px;
             box-shadow: 1px 3px 6px rgba(50,50,50,0.5);
+            .card-body {
+                background-color: #b4f1e4;
+            }
         }
         .list {
             // background: blue;
             ul {
                 list-style-type:none;
                 padding: 10px 20px;
-                
+                li {
+                    line-height: 2em;
+                }
             }
         }
     }
