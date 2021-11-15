@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    
+<!-- PT Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&family=Shippori+Mincho&display=swap" rel="stylesheet">    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 
@@ -75,23 +80,23 @@
         <div class="container-fluid px-0">
             <section class="section01">
               <div class="container">
-                <p>NILE BEAUTYは、世界中の美容企業がいつでもどこでも
-                  オンラインでB2Bマッチングできる全く新しいサービス。</p>
-                
-                <div class="video-area">
-                  <iframe width="560" height="315" 
-                  src="https://www.youtube.com/embed/niUeC32DTLA"
-                   title="YouTube video player" frameborder="0" 
-                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                   allowfullscreen>
-                  </iframe>
-                </div>
-                <div class="video-bottom-text">
-                  <p>24時間365日、スマホひとつで、新しいビジネスパートナー見つけることができます。</p>
+                <div class="intro col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+                    <div class="intro-text">
+                      <h6 class="text-center"><span>NILE BEAUTYは、世界中の美容企業がいつでもどこでも<br>オンラインでB2Bマッチングできる全く新しいサービス。</span></h6>
+                    </div>
+                    <div class="video-container">
+                      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/niUeC32DTLA"></iframe>
+                    </div>  
+                    <div class="video-bottom-text">
+                      <p>24時間365日、スマホひとつで、新しいビジネスパートナー見つけることができます。</p>
+                    </div>
                 </div>
               </div>
             </section>
             <section class="section02">
+              <div class="background-text">
+                <h2>ABOUT NILE</h2>
+              </div>
               <div class="container">
                 <div class="about">
                   <p v-html="$t('section02.about')"></p>
@@ -119,17 +124,17 @@
                 <h2 class="mb-3">You can start easily with NILE.</h2>
                   <div class="row col-xl-10 offset-xl-1 col-lg-12 col-md-12">
                     <div class="col-lg-4 col-md-4 accomplishments" v-for="accomplish in accomplishments">
-                      <div class="inner-wrapper">
-                        <div class="section07-area2">
+                      
+                        <div class="top-text box">
                           {{accomplish.task}} 
-                      </div>
-                      <div class="img">
-                          <img :src="accomplish.image" alt="image" class="img-fluid">
-                          <div class="img-text">
-                              <p>{{accomplish.solution}}</p>
-                          </div>
-                      </div>
-                      </div>
+                        </div>
+                        <div class="img box">
+                            <img :src="accomplish.image" alt="image" class="img-fluid">    
+                        </div>
+                        <div class="bottom-text box">
+                          <p>{{accomplish.solution}}</p>
+                        </div>
+                      
                     </div>
                   </div>
                   <p class="text-center my-3 small">* {{message}}</p>
@@ -175,9 +180,9 @@ var vm = new Vue ({
     data: {
         capabilities: [
             {number: 1, text: '出展にかかる時間やコストを大幅に削減。必要なのは月額費用と商談チャットチケット代だけ(商談企業はチケット代以外無料)。', image: '../../images/nile/img001.png'},
-            {number: 2, text: '国際的なビジネスマッチングができます。', image: '../../images/nile/img001.png'},
-            {number: 3, text: '商談用チャット機能あり。専用スタンプで、気軽にやり取りができる。やりとりの進捗・ステータス管理ができる。', image: '../../images/nile/img001.png'},
-            {number: 4, text: '便利な多言語機能（英語・フランス語・スペイン語・中国語・日本語）。', image: '../../images/nile/img001.png'},
+            {number: 2, text: '国際的なビジネスマッチングができます。', image: '../../images/nile/img002.png'},
+            {number: 3, text: '商談用チャット機能あり。専用スタンプで、気軽にやり取りができる。やりとりの進捗・ステータス管理ができる。', image: '../../images/nile/img003.png'},
+            {number: 4, text: '便利な多言語機能（英語・フランス語・スペイン語・中国語・日本語）。', image: '../../images/nile/img004.png'},
             {number: 5, text: 'NILEに出展（Exhibitor）すれば企業情報、商品情報、たくさんのコンテンツ記事を登録企業に配信することができます（出展企業だけの機能）', image: '../../images/nile/img001.png'},
             {number: 6, text: 'NILEに商談企業（Negotiator）として登録すれば、出展企業の情報をいつでも気軽に見る、集める、話すことができます。', image: '../../images/nile/img001.png'},
             {number: 7, text: '紹介・招待システムあり。お知り合いの企業をサイトに招待・登録していただくと、無料商談チケットをプレゼント。', image: '../../images/nile/img001.png'},
@@ -218,7 +223,7 @@ var tr = new Vue ({
     messages: {
       ja: {
         section02: {
-          about: 'これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br> NILE BEAUTYは企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br> NILE BEAUTYは企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、オンラインだからこそ実現できる良質な「偶然の出会い」を提供し、長く続くビジネスをサポートいたします。',
+          about: 'これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br><strong>NILE BEAUTY</strong>は企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br> NILE BEAUTYは企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、オンラインだからこそ実現できる良質な「偶然の出会い」を提供し、長く続くビジネスをサポートいたします。',
         },
         footer: {
           service: "サービス",

@@ -1,6 +1,5 @@
-$kmax-orange: #F26722;
-$kmax-black: rgba(0,0,0);
-$kmax-white: rgba(233,233,233);
+$nile-blue: rgb(5,80,132);
+$nile-green: #037D75;
 
 
 
@@ -29,25 +28,74 @@ $kmax-white: rgba(233,233,233);
                 margin:0 auto;
             }
             h3 {
-                color:$kmax-white;
+                color:white;
                 margin-top: 5vh;
             }
             h5 {
-                color: $kmax-white;
+                color: white;
             }
         }
     }
 
     section {
-        padding: 4vh 0;
+        padding: 8vh 0;
+    }
+
+    .section01 {
+       .intro {
+            .intro-text {
+                background:$nile-blue;
+                h6 {
+                    line-height: 2em;
+                    font-size:1.25em;
+                    color: #fff;
+                }
+            }
+            .video-container {
+                position: relative;
+                overflow: hidden;
+                aspect-ratio: 16/9;
+                .responsive-iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .video-bottom-text {
+                padding:3vh 0;
+                p {
+                    text-align: center;
+                }
+            }
+       }
+          
+          
     }
     
     .section02 {
+        background:$nile-green;
+        position: relative;
+        .background-text {
+            position:absolute;
+            top:0;
+            left:0;
+            font-family: 'PT Serif', serif;
+            background-color: rgba($nile-blue, 0.7);
+            h2 {
+                font-size: 3.5em;
+                color:#fff;
+                padding:0 20px;
+            }
+        }
         .container {
             .about {
-                background: crimson;
+                border:2px solid $nile-green;
                 color:white;
-                width: 80%;
+                width: 70%;
                 margin:0 auto;
                 padding:30px 20px;
                 p {
@@ -55,6 +103,32 @@ $kmax-white: rgba(233,233,233);
                 }
             }
         }
+    }
+
+    .section04 {
+        .container {
+            .accomplishments {
+                display: flex;
+                flex-direction: column;
+                // flex: 1;
+                .box {
+                    flex:1;
+                
+                }
+                .top-text {
+                    padding:10px 0;
+                    background:$nile-green;
+                }
+                .bottom-text {
+                    padding:10px 0;
+                    background:$nile-blue;
+                }
+            }
+        }
+        #conclusion {
+            text-align: center;
+        }
+        
     }
     
 }
