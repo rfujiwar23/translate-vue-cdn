@@ -36,11 +36,6 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <!-- <label>Lang.</label>
-                <select v-model="$i18n.locale">
-                  <option value="en">English</option>
-                  <option value="ja">日本語</option>
-                </select> -->
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
@@ -52,8 +47,25 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#about">ABOUT</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">PROJECTS</a>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     PROJECTS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="projects/kamisma-beauty/index.html">KAMISMA BEAUTY</a>
+                      <a class="dropdown-item" href="projects/nile-beauty/index.html">NILE BEAUTY</a>
+                      <a class="dropdown-item" href="projects/kamismax/index.html">KAMISMAX</a>
+                    </div>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PROJECTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../kamisma-beauty/index.html">KAMISMA BEAUTY</a></li>
+                      <li><a class="dropdown-item" href="../nile-beauty/index.html">NILE BEAUTY</a></li>
+                      <li><a class="dropdown-item" href="index.html">KAMISMAX</a></li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#profile">PROFILE</a>
@@ -66,10 +78,10 @@
                     <option value="en">English</option>
                   </select>
                 </ul>
-                
               </div>
             </div>
         </nav>
+        
         <div class="title-banner">
             <div class="logo-area">
                 <div class="logo-img">
@@ -218,7 +230,7 @@
                   <p class="text-center my-3 small" v-html="$t('section04.solve')"></p>
               </div>
               <hr>
-              <div class="container">
+              <div class="container end">
                 <div class="to-end" v-html="$t('section04.message')"></div>
                 <div class="to-link">
                   <h6 v-html="$t('section04.register')"></h6>

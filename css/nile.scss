@@ -143,6 +143,7 @@ $nile-green: #037d75;
         }
       }
       .to-end {
+          margin:5vh auto;
         p {
           font-size: 1em;
           text-align: center;
@@ -150,7 +151,7 @@ $nile-green: #037d75;
       }
       .to-link {
         // margin-top:3vh;
-        padding: 3vh 0;
+        // padding: 3vh 0;
         width: 100%;
         text-align: center;
         max-width: 540px;
@@ -160,7 +161,9 @@ $nile-green: #037d75;
         color: #fff;
         h6 {
           // text-decoration: underline;
-          padding-bottom: 3px;
+          padding: 2vh 0;
+          background:#e47564;
+          text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.7);
           &:before {
             content: "【";
           }
@@ -170,46 +173,15 @@ $nile-green: #037d75;
           font-size: 1.25em;
         }
         p {
+          padding: 2vh 0 3vh;
           a {
             color: #fff;
           }
         }
       }
     }
-    #conclusion {
-      text-align: center;
-      margin-top: 8vh;
-      .to-end {
-        p {
-          font-size: 1em;
-        }
-      }
-      .to-link {
-        // margin-top:3vh;
-        padding: 3vh 0;
-        width: 100%;
-        max-width: 540px;
-        margin: 2vh auto;
-        background: #e74026;
-        box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
-        color: #fff;
-        h6 {
-          // text-decoration: underline;
-          padding-bottom: 3px;
-          &:before {
-            content: "【";
-          }
-          &:after {
-            content: "】";
-          }
-          font-size: 1.25em;
-        }
-        p {
-          a {
-            color: #fff;
-          }
-        }
-      }
+    .end {
+        margin:8vh auto 4vh;
     }
   }
 
@@ -249,3 +221,17 @@ $nile-green: #037d75;
     }
   }
 }
+
+@media screen and (max-width: 440px) {
+    .wrapper4 {
+      .section01 {
+        .intro {
+          .intro-text {
+            h6 {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
