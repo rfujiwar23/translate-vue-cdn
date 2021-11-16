@@ -22,6 +22,28 @@
 .wrapper3 .title-banner .logo-area h5 {
   color: #e9e9e9;
 }
+.wrapper3 .banner .banner-text-top {
+  background: black;
+  padding: 5vh 0;
+  color: #fff;
+}
+.wrapper3 .banner .banner-text-top h5 {
+  font-size: 1.5em;
+}
+.wrapper3 .banner .banner-text-top a {
+  color: #fef9f3;
+}
+.wrapper3 .banner .banner-text-bottom {
+  background: #739e82;
+  padding: 5vh 0;
+  color: #fff;
+}
+.wrapper3 .banner .banner-text-bottom h5 {
+  font-size: 1.5em;
+}
+.wrapper3 .banner .banner-text-bottom a {
+  color: #fef9f3;
+}
 .wrapper3 .section01 {
   padding: 7vh 0;
 }
@@ -213,9 +235,33 @@
   font-size: 1em;
 }
 
+@media screen and (max-width: 768.98px) {
+  .wrapper3 .title-banner {
+    aspect-ratio: 3/2;
+  }
+  .wrapper3 .title-banner .logo-area .logo-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .wrapper3 .title-banner .logo-area h3 {
+    color: #e9e9e9;
+    margin-top: 5vh;
+    font-size: 1.16em;
+  }
+  .wrapper3 .title-banner .logo-area h5 {
+    color: #e9e9e9;
+    font-size: 1em;
+  }
+}
 @media screen and (max-width: 500px) {
   .wrapper3 .line-break500 {
     display: block;
+  }
+  .wrapper3 .title-banner {
+    aspect-ratio: 3/2;
+  }
+  .wrapper3 .section01 .video-bottom-text h5 {
+    font-size: 1.25em;
   }
   .wrapper3 .section03 .container-fluid .characteristics {
     width: 100%;
