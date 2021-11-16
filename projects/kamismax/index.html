@@ -104,12 +104,12 @@
               <div class="container-fluid p-0">
                 <div class="banner-text-top text-center">
                   
-                    <h5>【サービスのお申し込み】</h5>
+                    <h5>{{$t("section01.text2")}}</h5>
                   
                   <p><a href="https://kamismax.kamisma.com">https://kamismax.kamisma.com</a></p>
                 </div>
                 <div class="banner-text-bottom text-center">
-                  <h5>【より詳しい内容をご覧になりたい方】</h5>
+                  <h5>{{$t("section01.text3")}}</h5>
                 <p><a href="https://kamismax.kamisma.com/service1/">https://kamismax.kamisma.com/service1/</a></p>
                 </div>
               </div>
@@ -121,20 +121,28 @@
                   <div class="col-lg-6 col-md-6">
                     <div class="information in-two p-3">
                       <div class="title">
-                        <h3><span>【KAMISMAXのこだわり・特徴】</span></h3>
+                        <h3><span>{{$t("section02.text1")}}</span></h3>
                       </div>
                       <div class="text">
-                        <h4><span>1. </span>厳選されたキャスティング</h4>
-                        <p>一流の証、カミカリスマを受賞された美容師・美容室の方々を中心に出演者をキャスティング。一流の技術はもちろん、その思考や人物像にも触れることができる内容もお届けします。</p>
+                        <h4><span>1. </span>{{$t("section02.text1Title")}}</h4>
+                        <p>{{$t("section02.text1Body")}}</p>
                       </div>
                       <div class="text">
+                        <h4><span>2. </span>{{$t("section02.text2Title")}}</h4>
+                        <p>{{$t("section02.text2Body")}}</p>
+                      </div>
+                      <div class="text">
+                        <h4><span>3. </span>{{$t("section02.text3Title")}}</h4>
+                        <p>{{$t("section02.text3Body")}}</p>
+                      </div>
+                      <!-- <div class="text">
                         <h4><span>2. </span>豊富な映像配信コンテンツ</h4>
                         <p>番組の構成は様々。技術＋楽しめる映像、を幅広く配信しています。KAMISMAXでしか見ることができない企画も提供しています。</p>
                       </div>
                       <div class="text">
                         <h4><span>3. </span>美容業界初の視聴環境</h4>
                         <p>⾊んな⾓度から⾒ることができる「マルチアングル」×圧倒的な映像クオリティ「４K」を採⽤しています。学びの視点が大きく変わります。</p>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
@@ -315,10 +323,21 @@
     messages: {
       en: {
         section01: {
-          h5text: 'KAMISMAX is <br> the online platform in realizing a new wave of educational environment',
+          h5text: 'KAMISMAX: <br> Online Platform in Realizing the New Wave of Educational Environment',
           li1: 'Task for Education for Beauty/Salon Industry',
           li2: 'Task of Educational Streaming Video Service',
-          ptext: 'Providing a New Teaching Method of Above Mentioned Purposes'
+          ptext: 'Providing a New Teaching Method of Above Mentioned Purposes',
+          text2: 'Register for Service',
+          text3: 'See Details'
+        },
+        section02: {
+          text1: '【Characteristics of KAMISMAX】',
+          text1Title: 'Exclusive Cast',
+          text1Body: 'Cast of KAMI CHARISMA award-winning stylists. You will be able to see their first class skills as well as their thoughts and personalities.',
+          text2Title: 'Rich in Streaming Video Contents',
+          text2Body: 'Different types of program setting, such as skills and enjoyable contents.  Also, concents that are only shown on KAMISMAX.',
+          text3Title: 'The Very First Viewing Environment in Beauty Industry',
+          text3Body: 'Multiangle Views x High Quality 4K.  Change in how you can learn contents.',
         },
         section04: {
           text1: 'Official Site',
@@ -334,7 +353,18 @@
           h5text: 'KAMISMAXは、<br>次代に向けた新しい教育環境を実現する<br>独自開発オンラインプラットフォームです。',
           li1: '美容業界における教育の課題',
           li2: '教育動画配信サービス市場の課題',
-          ptext: '二つの課題を解決するため新たな学びを提供していきます'
+          ptext: '二つの課題を解決するため新たな学びを提供していきます',
+          text2: 'サービスのお申し込み',
+          text3: 'より詳しい内容をご覧になりたい方'
+        },
+        section02: {
+          text1: '【KAMISMAXのこだわり・特徴】',
+          text1Title: '厳選されたキャスティング',
+          text1Body: '一流の証、カミカリスマを受賞された美容師・美容室の方々を中心に出演者をキャスティング。<br>一流の技術はもちろん、その思考や人物像にも触れることができる内容もお届けします。',
+          text2Title: '豊富な映像配信コンテンツ',
+          text2Body: '番組の構成は様々。技術＋楽しめる映像、を幅広く配信しています。KAMISMAXでしか見ることができない企画も提供しています。',
+          text3Title: '美容業界初の視聴環境',
+          text3Body: '⾊んな⾓度から⾒ることができる「マルチアングル」×圧倒的な映像クオリティ「４K」を採⽤しています。学びの視点が大きく変わります。',
         },
         section04: {
           text1: '公式サイト',
