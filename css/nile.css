@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .wrapper4 .navbar {
-  background: #9DE7D7;
+  background: #9de7d7;
 }
 .wrapper4 .title-banner {
   background: url(../images/nile/top-bg1.png) no-repeat;
@@ -60,7 +60,7 @@
   text-align: center;
 }
 .wrapper4 .section02 {
-  background: #037D75;
+  background: #037d75;
   position: relative;
 }
 .wrapper4 .section02 .background-text {
@@ -71,11 +71,11 @@
 }
 .wrapper4 .section02 .background-text h2 {
   font-size: 3.5em;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.75);
   padding: 0 20px;
 }
 .wrapper4 .section02 .container .about {
-  border: 2px solid #037D75;
+  border: 2px solid #037d75;
   color: white;
   width: 100%;
   max-width: 960px;
@@ -111,7 +111,34 @@
   color: #fff;
 }
 .wrapper4 .section04 .container .card .bottom-text {
-  background: #037D75;
+  background: #037d75;
+  color: #fff;
+}
+.wrapper4 .section04 .container .to-end p {
+  font-size: 1em;
+  text-align: center;
+}
+.wrapper4 .section04 .container .to-link {
+  padding: 3vh 0;
+  width: 100%;
+  text-align: center;
+  max-width: 540px;
+  margin: 2vh auto;
+  background: #e74026;
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+  color: #fff;
+}
+.wrapper4 .section04 .container .to-link h6 {
+  padding-bottom: 3px;
+  font-size: 1.25em;
+}
+.wrapper4 .section04 .container .to-link h6:before {
+  content: "【";
+}
+.wrapper4 .section04 .container .to-link h6:after {
+  content: "】";
+}
+.wrapper4 .section04 .container .to-link p a {
   color: #fff;
 }
 .wrapper4 .section04 #conclusion {
@@ -126,7 +153,7 @@
   width: 100%;
   max-width: 540px;
   margin: 2vh auto;
-  background: #E74026;
+  background: #e74026;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
   color: #fff;
 }
@@ -149,6 +176,12 @@
 }
 .wrapper4 .footer .container .company-footer h5 {
   font-size: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper4 .section01 .intro .intro-text h6 {
+    font-size: 1em;
+  }
 }
 
 /*# sourceMappingURL=nile.css.map */
