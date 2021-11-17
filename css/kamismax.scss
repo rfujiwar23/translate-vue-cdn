@@ -35,15 +35,24 @@ $kmax-white: rgba(233,233,233);
     }
     .banner {
         .banner-text-top {
-            background: rgb(0,0,0); 
+            background: rgb(71, 71, 71); 
             padding: 5vh 0;
-            color: #fff;
+            // color: #fff;
             
             h5 {
                 font-size: 1.5em;
+                // background: rgb(0,0,0);
             }
             a {
-                color: #fef9f3;
+                
+                padding:10px;
+                color: #fff;
+                // background: rgb(0,0,0);
+                &:hover {
+                    background: rgb(105, 104, 104);
+                    color: rgb(233,233,233);
+                    
+                }
             }
         }
         .banner-text-bottom {
@@ -54,7 +63,12 @@ $kmax-white: rgba(233,233,233);
                 font-size: 1.5em;
             }
             a {
-                color: #fef9f3;
+                color: #fff;
+                padding: 10px;
+                &:hover {
+                    color: rgb(0,0,0);
+                    background: rgb(157, 209, 175);
+                }
             }
         }
     }
@@ -62,6 +76,10 @@ $kmax-white: rgba(233,233,233);
         padding: 7vh 0;
         .video-bottom-text {
             margin:3vh auto;
+            background: rgb(244,244,244);
+            box-shadow: 3px 3px 10px rgba(50, 50, 50, 0.6);
+            background: #DADADA;
+            padding:2vh 0;
             h5 {
                 font-size: 1.75em;
                 line-height: 1.5em;
@@ -72,6 +90,11 @@ $kmax-white: rgba(233,233,233);
                 text-align: center;
                 li {
                     line-height: 2em;
+                    font-size: 1.25em;
+                    span {
+                        border-bottom: rgb(68, 84, 105) dashed 2px;
+                        padding-bottom: 3px;
+                    }
                 }
             }
             p {
