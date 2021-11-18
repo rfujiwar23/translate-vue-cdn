@@ -2,6 +2,9 @@
 .wrapper4 .navbar {
   background: #9de7d7;
 }
+.wrapper4 .line-break500 {
+  display: none;
+}
 .wrapper4 .title-banner {
   background: url(../images/nile/top-bg1.png) no-repeat;
   background-position: center;
@@ -161,6 +164,9 @@
 }
 
 @media screen and (max-width: 500px) {
+  .wrapper4 .line-break500 {
+    display: block;
+  }
   .wrapper4 .section01 .intro .intro-text h6 {
     font-size: 1em;
   }

@@ -784,5 +784,13 @@ body {
     font-size: 0.9em;
   }
 }
+@media screen and (max-width: 375px) {
+  .wrapper2 .section01 p {
+    font-size: 0.9em;
+  }
+  .wrapper2 .section02 .text-top p {
+    font-size: 1em;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

@@ -1006,3 +1006,20 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 375px) {
+    .wrapper2 {
+        .section01 {
+            p {
+                font-size:0.9em;
+            }
+        }
+        .section02 {
+            .text-top {
+                p {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

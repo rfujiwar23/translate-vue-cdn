@@ -5,6 +5,10 @@ $nile-green: #037d75;
   .navbar {
     background: #9de7d7;
   }
+
+  .line-break500 {
+    display: none;
+  }
   .title-banner {
     background: url(../images/nile/top-bg1.png) no-repeat;
     background-position: center;
@@ -200,6 +204,9 @@ $nile-green: #037d75;
 
 @media screen and (max-width: 500px) {
   .wrapper4 {
+    .line-break500 {
+      display: block;
+    } 
     .section01 {
       .intro {
         .intro-text {

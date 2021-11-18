@@ -213,7 +213,7 @@ $kmax-white: rgba(233,233,233);
                 }
             }
             .second {
-                padding: 3vh 20px;
+                padding: 3vh 0 0;
                 ul {
                     list-style-type: none;
                     // background:rgba(255,255,255,0.8);
@@ -229,7 +229,7 @@ $kmax-white: rgba(233,233,233);
                 }
             }
             .third {
-                padding: 3vh 20px;
+                padding: 3vh 0 0;
                 .multi-angle {
                     padding:30px;
                     margin:3vh auto;
@@ -268,12 +268,12 @@ $kmax-white: rgba(233,233,233);
                     }
                     a {
                         // font-weight: bold;
-                        color:$kmax-white;
-                        background: $kmax-orange;
+                        color:$kmax-black;
+                        // background: $kmax-orange;
                         text-decoration: none;
                         padding:3px 10px;
                         margin-left: 5px;
-                        box-shadow: 3px 3px 6px rgba(193,193,193,1);
+                        // box-shadow: 3px 3px 6px rgba(193,193,193,1);
                         border-radius: 4px;
                         &:hover {
                             // font-weight: bold;
@@ -377,6 +377,34 @@ $kmax-white: rgba(233,233,233);
                                 background: $kmax-white;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .wrapper3 {
+        .title-banner {
+            .logo-area {
+                h3 {
+                    font-size: 1.05em;
+                }
+            }
+        }
+        .section01 {
+            .video-bottom-text {
+                p {
+                    font-size: 0.9em;
+                }
+            }
+        }
+        .section02 {
+            .container-fluid {
+                .information {
+                    .title {
+                        padding:8px 0;
                     }
                 }
             }
