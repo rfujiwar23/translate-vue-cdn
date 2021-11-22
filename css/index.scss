@@ -566,7 +566,7 @@ body {
         background:#9DE7D7;
     }
     .title-banner {
-        background-color:#f2bf53;
+        background-color:#fff;
         aspect-ratio: 3/1;
         display: flex;
         align-items: center;
@@ -576,11 +576,31 @@ body {
                 width:60%;
                 margin:0 auto;
             }
+            .text {
+                p {
+                    font-size: 1.25em;
+                    line-height: 2em;
+                    font-family: 'Shippori Mincho', serif;
+                    span {
+                        font-size: 0.9em;
+                    }
+                }
+            }
         }
     }
     section {
         padding: 2vh 0;
         font-family: 'Shippori Mincho', serif;
+    }
+
+    .big-banner {
+        background-color: #F2BF53;
+        padding:5vh 0;
+        .logo {
+            width: 80%;
+            margin:0 auto;
+            
+        }
     }
     .section01 {
         background: rgb(255,241,209);
@@ -588,7 +608,7 @@ body {
         padding:5vh 0;
         p {
             text-align: center;
-            line-height: 2em;
+            line-height: 2.5em;
             font-size: 1.25em;
             em {
                 font-style: normal;
@@ -597,6 +617,12 @@ body {
             strong {
                 font-size: 1.25em;
             }
+        }
+
+        .carousel-area {
+            width:100%;
+            margin:0 auto;
+            max-width: 960px;
         }
 
         .emphasis-gray {
@@ -755,6 +781,8 @@ body {
            }
         }
     }
+
+   
 }
 
 @media screen and (max-width:1200px) {
@@ -764,6 +792,12 @@ body {
             width:90%;
             max-width:960px;
            }
+        }
+    }
+
+    .wrapper2 {
+        .title-banner {
+            aspect-ratio: 4/3;
         }
     }
 }
@@ -839,6 +873,13 @@ body {
         .br_on_768 {
             display: block;
         }
+        .title-banner {
+            background-color: #fff;
+            aspect-ratio: 3/2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -899,6 +940,13 @@ body {
             p {
                 padding: 0 10px;
             } 
+        }
+        .title-banner {
+            .text {
+                p {
+                    font-size: 1em;
+                }
+            }
         }
     }
 
@@ -963,6 +1011,15 @@ body {
         .br_on_430 {
             display: block;
         }
+        .title-banner {
+            .logo-area {
+                .text {
+                    p {
+                        font-size: 1.15em;
+                    }
+                }
+            }
+        }
         .section01 {
             p {
                 font-size: 1em;
@@ -1013,6 +1070,15 @@ body {
     }
 
     .wrapper2 {
+        .title-banner {
+            .logo-area {
+                .text {
+                    p {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
         .section03 {
             .container {
                 p {
