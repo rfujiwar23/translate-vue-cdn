@@ -708,8 +708,11 @@
                   var createLabel = document.createElement('label');
                   createLabel.htmlFor = response[i].id;
                   createLabel.innerHTML = '<em>' + response[i].createdAt.substring(0,10) + '</em>' + ' ' + response[i].title + '<span class="'+ diffDayClass + '">' + text + '</span>';
+                  // + '<span class="'+ diffDayClass + '">' + text + '</span>'
 
-                  // console.log(createLabel);
+
+
+                  console.log(createLabel);
 
                   var createArticle = document.createElement('article');
                   createArticle.innerHTML = response[i].body;
@@ -728,12 +731,12 @@
                   
 
                   fragment.appendChild(textContents);
-                  console.log(fragment);
+                  // console.log(fragment);
                   
                   accordionList.appendChild(accordionDiv);
 
                   contents2put.appendChild(accordionContents);
-                  console.log(contents2put);
+                  // console.log(contents2put);
 
                 
 
