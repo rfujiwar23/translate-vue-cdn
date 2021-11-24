@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/accordion.css"> -->
+    <!-- <script src="js/accordion.js"></script> -->
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,6 +106,13 @@
           <div id="list-up" class="ac-container">
 
           </div>
+
+          
+            <div id="news-contents" class="accordion">
+            </div>
+          
+
+         
 
           
           
@@ -587,6 +596,7 @@
             console.log(json);
               var fragment = document.createDocumentFragment();
               var accordionList = document.createDocumentFragment();
+              var contents2put = document.createDocumentFragment();
               
               for (var i = 0; i < json.contents.length; i++) {
 
@@ -598,7 +608,23 @@
                   // console.log(response[i].title);
                   // console.log(response[i].type.category);
                   // console.log(response[i].createdAt.substring(0,10));
+
+                  var nType = json.contents[i].type;
+                  console.log(nType);
                  
+                  var d1 = new Date(); //"now"
+                var d2 = new Date(response[i].createdAt); 
+                var diff = Math.abs(d1-d2); 
+                var diffDays = Math.ceil(diff / (1000 * 60 * 60 * 24))
+
+
+                if(diffDays <= 3) {
+                  var text = 'New';
+                  var diffDayClass = "new";
+                } else {
+                  var text = + 3 + '日以上前';
+                  var diffDayClass = "older";
+                } 
             
                   var title = document.createElement('h2');
                   title.innerHTML = json.contents[i].title;
@@ -615,13 +641,37 @@
                   body.className = "post-contents";
                   body.innerHTML = json.contents[i].body;
                   
-
+                  
                   var textContents = document.createElement('div');
                   textContents.className = "textContents col-md-4 col-sm-6";
                   textContents.appendChild(title);
-                  // textContents.appendChild(type);
-                  // textContents.appendChild(postDate);
-                  // textContents.appendChild(body);
+                  
+
+                  var bodyText = document.createElement('div');
+                  bodyText.className = "accordion-body";
+                  bodyText.innerHTML = json.contents[i].body;
+
+                  var newsTitle = document.createElement('h2');
+                  newsTitle.innerHTML = "<button class='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#content-accordion-" + i + "'>" + "<em>" + response[i].createdAt.substring(0,10) + "</em>" + " " + response[i].title + "<span class='"+ diffDayClass + "'>" + text + "</span></button>";
+                  newsTitle.className = "accordion-header";
+
+                  var bodyContents = document.createElement('div');
+                  bodyContents.className = "accordion-collapse collapse";
+                  bodyContents.id = "content-accordion-" + i;
+                  bodyContents.appendChild(bodyText);
+
+                  var accordionContents = document.createElement('div');
+                  accordionContents.className = "accordion-item my-3 shadow";
+                  accordionContents.appendChild(newsTitle);
+                  accordionContents.appendChild(bodyContents);
+
+
+
+                  console.log(accordionContents);
+
+                 
+                  
+
 
                   
                   // console.log(textContents);
@@ -644,20 +694,8 @@
                 // console.log(articleDate);
                 // console.log(yesNow);
 
-                var d1 = new Date(); //"now"
-                var d2 = new Date(response[i].createdAt); 
-                var diff = Math.abs(d1-d2); 
-                var diffDays = Math.ceil(diff / (1000 * 60 * 60 * 24))
-
-
-                if(diffDays <= 3) {
-                  var text = 'New';
-                  var diffDayClass = "new";
-                } else {
-                  var text = '> ' + 3 + 'days';
-                  var diffDayClass = "older";
-                } 
-                  console.log(text);
+                
+                  // console.log(text);
                   
                   // creating accordion
                   var inputLabel = document.createElement('input');
@@ -671,7 +709,7 @@
                   createLabel.htmlFor = response[i].id;
                   createLabel.innerHTML = '<em>' + response[i].createdAt.substring(0,10) + '</em>' + ' ' + response[i].title + '<span class="'+ diffDayClass + '">' + text + '</span>';
 
-                  console.log(createLabel);
+                  // console.log(createLabel);
 
                   var createArticle = document.createElement('article');
                   createArticle.innerHTML = response[i].body;
@@ -684,21 +722,25 @@
                   accordionDiv.appendChild(createLabel);
                   accordionDiv.appendChild(createArticle);
 
-                  console.log(accordionDiv);
+                  // console.log(accordionDiv);
 
                   // creating accordion
                   
 
                   fragment.appendChild(textContents);
-                  // console.log(fragment);
+                  console.log(fragment);
                   
                   accordionList.appendChild(accordionDiv);
+
+                  contents2put.appendChild(accordionContents);
+                  console.log(contents2put);
 
                 
 
               }
               // document.getElementById('list').appendChild(fragment);
-              document.getElementById('list-up').appendChild(accordionList);
+              // document.getElementById('list-up').appendChild(accordionList);
+              document.getElementById('news-contents').appendChild(contents2put);
               
           })
     </script>

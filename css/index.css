@@ -363,6 +363,35 @@ body {
   color: #666;
   line-height: 1.5;
 }
+.wrapper .part4 .accordion {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.wrapper .part4 .accordion .accordion-item :hover {
+  background-color: #9DE7D7;
+}
+.wrapper .part4 .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  background-color: #9DE7D7;
+  color: #3a3b3c;
+}
+.wrapper .part4 .accordion .accordion-item .accordion-header .accordion-button em {
+  font-style: normal;
+  margin-right: 10px;
+  color: #838383;
+}
+.wrapper .part4 .accordion .accordion-item .accordion-header .accordion-button span.new {
+  color: red;
+}
+.wrapper .part4 .accordion .accordion-item .accordion-header .accordion-button span.older {
+  color: blue;
+  margin-left: 5px;
+  padding: 0 10px;
+  font-size: 0.7em;
+  border: 1px solid blue;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
 .wrapper .part5 {
   padding-bottom: 5vh;
 }
@@ -495,14 +524,6 @@ body {
   padding: 2vh 0;
   font-family: "Shippori Mincho", serif;
 }
-.wrapper2 .big-banner {
-  background-color: #F2BF53;
-  padding: 5vh 0;
-}
-.wrapper2 .big-banner .logo {
-  width: 80%;
-  margin: 0 auto;
-}
 .wrapper2 .section01 {
   background: #fff1d1;
   background: linear-gradient(180deg, #fff1d1 0%, #faf8f3 40%, white 100%);
@@ -526,7 +547,6 @@ body {
   max-width: 960px;
 }
 .wrapper2 .section01 .emphasis-gray {
-  margin-top: 5vh;
   background: #d3d3d3;
   padding: 3vh 0;
 }
@@ -534,6 +554,43 @@ body {
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.wrapper2 .section01 .big-banner {
+  background-color: #F2BF53;
+  padding: 5vh 0;
+}
+.wrapper2 .section01 .big-banner .logo {
+  width: 60%;
+  margin: 0 auto;
+}
+.wrapper2 .section01 .banner-bottom {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50);
+  padding: 3vh 0;
+}
+.wrapper2 .section01 .banner-bottom p {
+  color: #fff;
+}
+.wrapper2 .section01 .banner-bottom p span.maboroshi {
+  font-weight: bold;
+  color: #c9bc9c;
+  background: black;
+  margin: 0 20px;
+}
+.wrapper2 .section01 .banner-bottom p span.star {
+  color: #8f8264;
+  font-weight: bold;
+  background: linear-gradient(to bottom, silver, #cdcdcd, silver);
+  margin: 0 20px;
+}
+.wrapper2 .section01 .text-to-right {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.wrapper2 .section01 .text-to-right p {
+  text-align: right;
+  padding: 3px 6px;
+  font-size: 0.8em;
 }
 .wrapper2 .section02 {
   background: url(../images/pattern.png);
