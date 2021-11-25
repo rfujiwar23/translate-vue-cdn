@@ -282,6 +282,9 @@
   .wrapper3 .section03 .container-fluid .characteristics {
     width: 100%;
   }
+  .wrapper3 .section03 .container-fluid .characteristics h4 span {
+    line-height: 2em;
+  }
   .wrapper3 .section03 .container-fluid .characteristics .char-text {
     width: 90%;
   }

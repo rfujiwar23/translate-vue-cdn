@@ -346,6 +346,11 @@ $kmax-white: rgba(233,233,233);
             .container-fluid {
                 .characteristics {
                     width: 100%;
+                    h4 {
+                        span {
+                            line-height: 2em;
+                        }
+                    }
                     .char-text {
                         width:90%;
                     }

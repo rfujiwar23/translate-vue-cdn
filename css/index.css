@@ -152,12 +152,12 @@ body {
   font-size: 0.9em;
 }
 .wrapper .part2 .services .item .body {
-  padding: 10px 10px 0;
+  padding: 10px 10px 28px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   margin-bottom: 3vh;
 }
 .wrapper .part2 .services .item .link {

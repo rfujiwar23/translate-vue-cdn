@@ -112,7 +112,37 @@
             </div>
           
 
-         
+            <div class="left">
+              <div class="productSelect col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-8 offset-2">
+                  <p>メーカー一覧</p>
+                  <select id="choose-from" onchange="sortCategory();">
+                      <option disabled="disabled" selected>記事一覧</option>
+                  </select>
+              </div>
+              <div class="inner">
+                  <p id="alert">記事一覧</p>
+                  <div id="list" class="row">
+                  </div>
+                  <div id="listing">
+                      <ul class="list-articles"></ul>
+                      <div class="tabs">
+                          <div class="first">最初</div>
+                          <div class="previous">
+                              <i class="fas fa-angle-double-left"></i>
+                              <!-- Previous -->
+                          </div>
+                          <div class="next">
+                              <i class="fas fa-angle-double-right"></i>
+                              <!-- Next -->
+                          </div>
+                          <div class="last">最後</div>
+                      </div>
+                  </div>
+                  <div id="refresh" style="display: none;">
+                      <a onclick="resetArticles()">全ての記事</a>
+                  </div>
+              </div>
+          </div>
 
           
           
@@ -416,15 +446,6 @@
 
         
       </div>
-      <!-- <div class="row">
-        <div class="col-lg-6">
-          <p>{{ $t("kmx.title") }}</p>
-          <p style="white-space:pre-wrap;">{{ $t("kmx.body") }}</p>
-        </div>
-        <div class="col-lg-6">
-
-        </div>
-      </div> -->
     </div>
 
     <script>
@@ -748,5 +769,7 @@
           })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/vue-carousel@0.18.0/dist/vue-carousel.min.js"></script>
+    <script src="js/getarticle.js"></script>
+    <script src="js/categorizeArticle.js"></script>
   </body>
 </html>
